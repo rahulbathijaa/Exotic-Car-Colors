@@ -41,18 +41,24 @@ const HomepageColors =() => {
 
     return (
         <div
-          css={{
-            display: "grid",
-            gridTemplateColumns: "1fr 1fr 1fr 1fr",
-            gap: "4",
-            width: 400,
+          style={{
+            display: "flex",
+            // gridTemplateColumns: "1fr 1fr 1fr 1fr",
+            width: "100%",
             height: "auto",
+            flexWrap: "wrap",
           }}
         >
           {colors.map(item => (
-            <a
+           <div style={{
+            background: item.color,
+            height: 250,
+            width: 250,  
+            margin: 5,
+          }}>
+           <a
               key={item.color}
-              css={{
+              style={{
                 background: item.color,
                 display: "flex",
                 alignItems: "center",
@@ -65,6 +71,7 @@ const HomepageColors =() => {
             >
               {item.color}
             </a>
+            </div>
           ))}
         </div>
       )

@@ -1,24 +1,31 @@
-import logo from './logo.svg';
+import React from 'react';
+import Navbar from './components/Navbar';
+import { HashRouter as Router, Routes, Route } from 'react-router-dom';
 import './App.css';
+import Home from './components/pages/Home';
+import HeroSection from './components/HeroSection';
+import ImageSlider from './components/ImageSlider';
+import SliderData from './components/SliderData'; 
+import HomepageBrands from './components/HomepageBrands';
+import HomepageColors from './components/HomepageColors';
+import Footer from './components/Footer';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+  <>
+    <Router>
+      <Navbar />
+      <ImageSlider slides={SliderData} />
+      <HeroSection />
+      <HomepageBrands />
+      <HomepageColors />
+      <Footer />
+      /* <Routes>
+        <Route path='/' exact component={Home} />
+      </Routes> */
+    </Router>
+  </>
+
   );
 }
 

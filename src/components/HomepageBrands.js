@@ -16,7 +16,7 @@ const HomepageBrands = () => {
         },
         {
             id: 2,
-            title: "Lamborghini",
+            title: "Lamborghiniiiiiii",
             imgSrc: Img2,
         }, 
         {

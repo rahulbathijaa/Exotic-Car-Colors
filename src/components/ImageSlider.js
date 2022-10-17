@@ -5,9 +5,9 @@ import HeroSection from './HeroSection';
 
 
 
-const ImageSlider = ({slides}) => {
-const [current, setCurrent] = useState(0)
-const length = slides.length
+const ImageSlider = ({ slides }) => {
+const [current, setCurrent] = useState(0);
+const length = slides.length;
 
 const nextSlide = () => {
     setCurrent(current === length - 1 ? 0 : current + 1)
@@ -22,7 +22,7 @@ const prevSlide = () => {
     }
 
   return (
-    <section className="slider">
+    <section className='slider'>
         <FaArrowAltCircleLeft className='left-arrow' onClick={prevSlide} />
         <FaArrowAltCircleRight className='right-arrow' onClick={nextSlide} />        
         {SliderData.map((slide, index) => {
@@ -32,7 +32,7 @@ const prevSlide = () => {
                     key={index}
                 >
                     {index === current && (
-                         <img src={slide.image} alt="ferrari cover photo" className='image' />
+                         <img src={slide.image} alt= 'ferrari cover photo' className='image' />
                     )}
                 </div>
             )

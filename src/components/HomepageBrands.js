@@ -1,10 +1,16 @@
 import React from 'react';
 import './HomepageBrands.css'
-import Img1 from '../img/ferrari-car.gif'
-import Img2 from '../img/lamborghini-car.gif'
+// import Img1 from '../img/ferrari-car.gif'
+// import Img2 from '../img/lamborghini-car.gif'
+// import Img3 from '../img/porsche-car.gif'
+// import Img4 from '../img/mclaren-car.gif'
+// import Img5 from '../img/audi-car.gif'
+
+import Img1 from '../img/Ferrari-resized.gif'
+import Img2 from '../img/Lamborghini-resized.gif'
 import Img3 from '../img/porsche-car.gif'
-import Img4 from '../img/mclaren-car.gif'
-import Img5 from '../img/audi-car.gif'
+import Img4 from '../img/Mclaren-resized.gif'
+import Img5 from '../img/Audi-resized.gif'
 
 
 const HomepageBrands = () => {
@@ -16,7 +22,7 @@ const HomepageBrands = () => {
         },
         {
             id: 2,
-            title: "Lamborghini",
+            title: "Lamborghiniiiiiii",
             imgSrc: Img2,
         }, 
         {

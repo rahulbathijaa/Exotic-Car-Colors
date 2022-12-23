@@ -2306,7 +2306,7 @@ const data = [
  for (const curr of data) {
   const currData = JSON.parse(JSON.stringify(curr));
   console.log(currData);
-  client.create(currData);
+  await client.create(currData);
  }
 
 

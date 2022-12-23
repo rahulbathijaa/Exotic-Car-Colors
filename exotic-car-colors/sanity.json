@@ -1,11 +1,11 @@
 {
   "root": true,
-  "project": {
-    "name": "exotic-car-colors"
-  },
   "api": {
     "projectId": "zlmf9sgs",
     "dataset": "production"
+  },
+  "project": {
+    "name": "exotic-car-colors"
   },
   "plugins": [
     "@sanity/base",

@@ -8,10 +8,6 @@
     "name": "exotic-car-colors"
   },
   "plugins": [
-    "@sanity/base",
-    "@sanity/default-layout",
-    "@sanity/default-login",
-    "@sanity/desk-tool"
   ],
   "env": {
     "development": {

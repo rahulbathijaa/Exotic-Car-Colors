@@ -1,4 +1,4 @@
-import SlugInput from 'sanity-plugin-prefixed-slug'
+import {SlugInput} from 'sanity-plugin-prefixed-slug'
 
 
 export default {

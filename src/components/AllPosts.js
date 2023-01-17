@@ -26,7 +26,6 @@ export default function AllPosts() {
   const [allPostsData, setAllPosts] = useState(null);
 
   useEffect(() => {
-    console.log("useEffect");
     sanityClient
       .fetch(
         `*[_type == "Colors"]{

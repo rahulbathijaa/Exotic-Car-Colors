@@ -14,25 +14,31 @@ export default function OnePost() {
   const { slug } = useParams();
 
   useEffect(() => {
+    console.log("useEffect");
     sanityClient
       .fetch(
-        `*[slug.current == "${slug}"]{
-           title,
+        `*[slug.current == "/${slug}/"]{
+           brand_type,
            slug,
+           color_name,
+           short_description,
+           long_description,
            mainImage{
            asset->{
               _id,
               url
             }
-          },
-          body,
-          "name": author->name,
-          "authorImage": author->image
+          }
        }`
       )
-      .then((data) => setPostData(data[0]))
+      .then((data) => {
+        console.log('ayo', data)
+        setPostData(data[0])
+      })
       .catch(console.error);
   }, [slug]);
+
+
 
   if (!postData) return <div>Loading...</div>;
 
@@ -44,16 +50,16 @@ export default function OnePost() {
             {/* Title Section */}
             <div className="bg-white bg-opacity-75 rounded p-12">
               <h2 className="cursive text-3xl lg:text-6xl mb-4">
-                {postData.title}
+                {postData.brand_type}
               </h2>
               <div className="flex justify-center text-gray-800">
-                <img
+                {/* <img
                   src={urlFor(postData.authorImage).url()}
                   className="w-10 h-10 rounded-full"
                   alt="Author is Kap"
-                />
+                /> */}
                 <h4 className="cursive flex items-center pl-2 text-2xl">
-                  {postData.name}
+                  {postData.short_description}
                 </h4>
               </div>
             </div>
@@ -67,7 +73,7 @@ export default function OnePost() {
         </div>
         <div className="px-16 lg:px-48 py-12 lg:py-20 prose lg:prose-xl max-w-full">
           <BlockContent
-            blocks={postData.body}
+            blocks={postData.long_description}
             projectId={sanityClient.clientConfig.projectId}
             dataset={sanityClient.clientConfig.dataset}
           />

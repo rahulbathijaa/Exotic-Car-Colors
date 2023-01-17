@@ -22,7 +22,7 @@ function App() {
         <Route component={OnePost} path="/:slug" /> */}
 
         <Route element={<AllPosts />} path="/" exact />
-        <Route element={<OnePost />} path="/onepost" />
+        <Route element={<OnePost />} path="/:slug" />
 
         {/* </div> */}
       </Routes>

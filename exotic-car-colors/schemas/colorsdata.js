@@ -12,21 +12,31 @@ export default {
             type: "string",
         },
         {
-            // name: "slug_name",
-            // title: "Slug",
-            // type: "slug",
-            // fields: {
-                // If you want to customize how slugs are formatted
-                name: 'slug_custom_format',
-                type: 'slug',
-                inputComponent: SlugInput,
-                options: {
-                  urlPrefix: 'https://exoticcarcolors.com/car-colors/',
-                  slugify: (slugString) => slugString.toLowerCase(),
-                  // You can also avoid slugifying entirely by returning the full value:
-                  slugify: (slugString) => slugString,
-                },
-              },
+            name: 'slug',
+            title: 'Slug',
+            type: 'slug',
+            options: {
+              source: 'title',
+              maxLength: 96
+            }
+          },
+        // {
+        //     // name: "slug_name",
+        //     // title: "Slug",
+        //     // type: "slug",
+        //     // fields: {
+        //         // If you want to customize how slugs are formatted
+        //         name: 'slug_custom_format',
+        //         type: 'slug',
+        //         title: 'Slug',
+        //         inputComponent: SlugInput,
+        //         options: {
+        //           urlPrefix: 'https://exoticcarcolors.com/car-colors/',
+        //           slugify: (slugString) => slugString.toLowerCase(),
+        //           // You can also avoid slugifying entirely by returning the full value:
+        //           slugify: (slugString) => slugString,
+        //         },
+        //       },
             // options: {
             //     source: 'title',
             //     maxLength: 200, // will be ignored if slugify is set
@@ -36,11 +46,22 @@ export default {
             //                          .slice(0, 200)
             //   }
         // },
+        
+        
         {
             name: "color_name",
             title: "Color Name",
             type: "string",
         },
+        
+        {
+            name: 'mainImage',
+            title: 'Main image',
+            type: 'image',
+            options: {
+              hotspot: true
+            }
+          },
 
         {
             name: "short_description",
@@ -53,6 +74,7 @@ export default {
             title: "Long Description",
             type: "text",
         },
+        
 
         {
             name: "hex_text",

@@ -1,9 +1,9 @@
 .homepageColors {
-    display: grid;
-    /* gridTemplateColumns: 1fr 1fr 1fr 1fr, */
-    grid-template-columns: 1fr 1fr 1fr;
-    gap: 4px;
-    width: 400px;
-    height: "auto";
-    padding: 500px;
- }
+  display: grid;
+  /* gridTemplateColumns: 1fr 1fr 1fr 1fr, */
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 4px;
+  width: 400px;
+  height: "auto";
+  padding: 500px;
+}

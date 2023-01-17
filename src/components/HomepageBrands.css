@@ -1,19 +1,14 @@
 .homepageBrands {
-display: grid;
-grid-template-columns: 1fr 1fr 1fr;
-grid-gap: 5px;
-align-items: start;
-justify-content: space-between;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 5px;
+  align-items: start;
+  justify-content: space-between;
 }
 
 .homepageBrands:hover {
-    --_p: 100%;
-
+  --_p: 100%;
 }
-
-
-
-
 
 /* .homepageBrands{
     -webkit-column-count: 3;

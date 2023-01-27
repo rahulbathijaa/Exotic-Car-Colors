@@ -33,6 +33,10 @@ export default function AllPosts() {
        slug,
        color_name,
        short_description,
+       hex_text,
+       rgb_text,
+       cmyk_text,
+       ral_text,
        mainImage{
         asset->{
           _id,
@@ -52,12 +56,14 @@ export default function AllPosts() {
   console.log({ allPostsData });
 
   return (
-    <div className="bg-green-100 min-h-screen p-12">
+    <div className="bg-white-100 min-h-screen p-12">
       <div className="container mx-auto">
-        <h2 className="text-5xl flex justify-center cursive">Blog Posts</h2>
+        <h2 className="text-5xl flex justify-center cursive">Test12</h2>
         <h3 className="text-lg text-gray-600 flex justify-center mb-12">
-          Welcome to my blog posts page!
+          Test123!
         </h3>
+
+
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
           {allPostsData &&
             allPostsData.map((post, index) => {
@@ -70,7 +76,13 @@ export default function AllPosts() {
                       border-l-8 border-green-400"
                     key={index}
                   >
-                    {post.brand_type}
+                    {post.color_name}
+                    {post.short_description}
+                    {post.hex_text}
+                    {post.rgb_text}
+                    {post.cmyk_text}
+                    {post.ral_text}
+                    
                     <img
                       className="w-full h-full rounded-r object-cover absolute"
                       src={post.mainImage.asset.url}

@@ -3,6 +3,7 @@ import Navbar from "./components/Navbar";
 // import { HashRouter as Router, Routes, Route } from 'react-router-dom';
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import "./App.css";
+import "./index.css";
 import AllPosts from "./components/AllPosts";
 import OnePost from "./components/OnePost";
 import Home from "./components/pages/Home";
@@ -23,25 +24,27 @@ function App() {
 
         <Route element={<AllPosts />} path="/" exact />
         <Route element={<OnePost />} path="/:slug" />
-
-        {/* </div> */}
-      </Routes>
+        </Routes>
     </BrowserRouter>
+  )
+      }
 
-    // <>
-    //   <Router>
-    //     <Navbar />
-    //     <ImageSlider slides={SliderData} />
-    //     <HeroSection />
-    //     <HomepageBrands />
-    //     <HomepageColors />
-    //     <Footer />
-    //     /* <Routes>
-    //       <Route path='/' exact component={Home} />
-    //     </Routes> */
-    //   </Router>
-    // </>
-  );
-}
+
+// {/* 
+//     // <>
+//     //   <Router>
+//     //     <Navbar />
+//     //     <ImageSlider slides={SliderData} />
+//     //     <HeroSection />
+//     //     <HomepageBrands />
+//     //     <HomepageColors />
+//     //     <Footer />
+//     //     /* <Routes>
+//     //       <Route path='/' exact component={Home} />
+//     //     </Routes> */
+//     //   </Router>
+//     // </>
+//   );
+// } */}
 
 export default App;

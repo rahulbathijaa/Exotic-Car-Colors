@@ -56,7 +56,13 @@ export default function AllPosts() {
   console.log({ allPostsData });
 
   return (
+    
+
     <div className="bg-white-100 min-h-screen p-12">
+      
+
+
+
       <div className="container mx-auto">
         <h2 className="text-5xl flex justify-center cursive">Test12</h2>
         <h3 className="text-lg text-gray-600 flex justify-center mb-12">

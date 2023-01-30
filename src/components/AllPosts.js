@@ -21,19 +21,28 @@
 import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import sanityClient from "../client.js";
+import Card from "./Card.js";
+import Footer from "./Footer.js";
+import { useParams } from "react-router-dom";
+import Navbar from "./Navbar.js";
+import HeaderPage from "./HeaderPage.js";
 
 export default function AllPosts() {
   const [allPostsData, setAllPosts] = useState(null);
+  const { brand_type } = useParams();
 
   useEffect(() => {
-    console.log("useEffect");
     sanityClient
       .fetch(
-        `*[_type == "Colors"]{
+        `*[brand_type == "${brand_type}"]{
        brand_type,
        slug,
        color_name,
        short_description,
+       hex_text,
+       rgb_text,
+       cmyk_text,
+       ral_text,
        mainImage{
         asset->{
           _id,
@@ -53,47 +62,25 @@ export default function AllPosts() {
   console.log({ allPostsData });
 
   return (
-    <div className="bg-green-100 min-h-screen p-12">
+    <div className="bg-white-100 p-12">
+      <Navbar />
+
+      <HeaderPage />
+
       <div className="container mx-auto">
-        <h2 className="text-5xl flex justify-center cursive">Blog Posts</h2>
+        <h2 className="text-5xl flex justify-center cursive">Test12</h2>
         <h3 className="text-lg text-gray-600 flex justify-center mb-12">
-          Welcome to my blog posts page!
+          Test123!
         </h3>
-        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-          {allPostsData &&
-            allPostsData.map((post, index) => {
-              if (!post.slug || !post.mainImage) return null;
-              return (
-                <Link to={post.slug.current} key={post.slug.current}>
-                  {/* <Link to={"/" + post.slug} key={post.slug}> */}
-                  <span
-                    className="block h-64 relative rounded shadow leading-snug bg-white
-                      border-l-8 border-green-400"
-                    key={index}
-                  >
-                    {post.brand_type}
-                    <img
-                      className="w-full h-full rounded-r object-cover absolute"
-                      src={post.mainImage.asset.url}
-                      alt=""
-                    />
-                    <span
-                      className="block relative h-full flex justify-end items-end pr
-                      -4 pb-4"
-                    >
-                      <h2
-                        className="text-gray-800 text-lg font-bold px-3 py-4 bg-red-700
-                        text-red-100 bg-opacity-75 rounded"
-                      >
-                        {post.title}
-                      </h2>
-                    </span>
-                  </span>
-                </Link>
-              );
-            })}
-        </div>
       </div>
+      <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+        {allPostsData &&
+          allPostsData.map((post, index) => {
+            if (!post.slug || !post.mainImage) return null;
+            return <Card post={post} />;
+          })}
+      </div>
+      <Footer />
     </div>
   );
 }

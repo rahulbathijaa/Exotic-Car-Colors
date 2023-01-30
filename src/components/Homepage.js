@@ -17,12 +17,12 @@ import Footer from "./Footer";
 export default function Card({ post }) {
   return (
     <div>
-        <Navbar />
-        <ImageSlider slides={SliderData} />
-        <HeroSection />
-        <HomepageBrands />
-        <HomepageColors />
-        <Footer />
+      <Navbar />
+      <ImageSlider slides={SliderData} />
+      <HeroSection />
+      <HomepageBrands />
+      <HomepageColors />
+      <Footer />
     </div>
-    );
+  );
 }

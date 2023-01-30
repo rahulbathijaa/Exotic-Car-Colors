@@ -14,7 +14,7 @@ import SliderData from "./components/SliderData";
 import HomepageBrands from "./components/HomepageBrands";
 import HomepageColors from "./components/HomepageColors";
 import Footer from "./components/Footer";
-import {Card} from "./components/Card";
+import { Card } from "./components/Card";
 
 function App() {
   return (
@@ -27,13 +27,12 @@ function App() {
         <Route element={<Homepage />} path="/" exact />
         <Route element={<AllPosts />} path="/colors/:brand_type" exact />
         <Route element={<OnePost />} path="/:slug" />
-        </Routes>
+      </Routes>
     </BrowserRouter>
-  )
-      }
+  );
+}
 
-
-// {/* 
+// {/*
 //     // <>
 //     //   <Router>
 //     //     <Navbar />

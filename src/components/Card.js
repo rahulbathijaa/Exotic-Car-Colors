@@ -15,8 +15,8 @@ export default function Card({ post }) {
         // background-image="../img/card-background.png"
       >
         <div className="bg-(../img/card-background.jpg)"></div>
-{/* 
-        <img
+
+        {/* <img
           className="w-full"
           src={post.mainImage.asset.url}
           alt={post.short_description}

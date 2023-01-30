@@ -8,7 +8,6 @@ import Card from "./Card.js";
 import Footer from "./Footer.js";
 import Navbar from "./Navbar.js";
 
-
 const builder = imageUrlBuilder(sanityClient);
 function urlFor(source) {
   return builder.image(source);
@@ -70,7 +69,7 @@ export default function OnePost() {
        }`);
 
       console.log("bruh", relatedPosts);
-      setRelated(relatedPosts)
+      setRelated(relatedPosts);
 
       // For bigbodyrb: 2 and 3
     }
@@ -111,10 +110,8 @@ export default function OnePost() {
   if (!postData) return <div>Loading...</div>;
 
   return (
-
     <div className="text-green">
-
-<Navbar />
+      <Navbar />
       <div className="max-w-[800px] mt-[-2px] w-full mx-auto text-center flex flex-col justify-center">
         <p className="text-[#00df9a] font-bold p-2">{postData.color_name}</p>
         <h1 className="md:text-7xl sm:text-6xl text-4xl font-bold md:py-6">
@@ -137,24 +134,27 @@ export default function OnePost() {
           {postData.ral_text}
         </p>
 
-        <div className='w-full bg-white py-16 px-4'>
-      <div className='max-w-[1240px] mx-auto grid md:grid-cols-2'>
-        <img className='w-[500px] mx-auto my-4' src={postData.mainImage.asset.url} alt='/' />
-        <div className='flex flex-col justify-center'>
-          <p>
-            {postData.long_description}
-          </p>
+        <div className="w-full bg-white py-16 px-4">
+          <div className="max-w-[1240px] mx-auto grid md:grid-cols-2">
+            <img
+              className="w-[500px] mx-auto my-4"
+              src={postData.mainImage.asset.url}
+              alt="/"
+            />
+            <div className="flex flex-col justify-center">
+              <p>{postData.long_description}</p>
+            </div>
+          </div>
         </div>
-      </div>
-    </div>
 
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-           {related.map(post => <Card post={post} />)}</div>
-        
-    <HomepageColors />
-     <Footer />
+          {related.map((post) => (
+            <Card post={post} />
+          ))}
+        </div>
 
-
+        <HomepageColors />
+        <Footer />
       </div>
     </div>
 

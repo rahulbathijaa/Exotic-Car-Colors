@@ -6,6 +6,7 @@ import "./App.css";
 import "./index.css";
 import AllPosts from "./components/AllPosts";
 import OnePost from "./components/OnePost";
+import Homepage from "./components/Homepage";
 import Home from "./components/pages/Home";
 import HeroSection from "./components/HeroSection";
 import ImageSlider from "./components/ImageSlider";
@@ -13,6 +14,7 @@ import SliderData from "./components/SliderData";
 import HomepageBrands from "./components/HomepageBrands";
 import HomepageColors from "./components/HomepageColors";
 import Footer from "./components/Footer";
+import {Card} from "./components/Card";
 
 function App() {
   return (
@@ -22,7 +24,8 @@ function App() {
         {/* <Route component={AllPosts} path="/" exact />
         <Route component={OnePost} path="/:slug" /> */}
 
-        <Route element={<AllPosts />} path="/" exact />
+        <Route element={<Homepage />} path="/" exact />
+        <Route element={<AllPosts />} path="/colors/:brand_type" exact />
         <Route element={<OnePost />} path="/:slug" />
         </Routes>
     </BrowserRouter>

@@ -34,21 +34,18 @@ const HomepageBrands = () => {
       title: "Porsche",
       imgSrc: Img3,
       link: "/colors/Porsche",
-
     },
     {
       id: 4,
       title: "McLaren",
       imgSrc: Img4,
       link: "/colors/McLaren",
-
     },
     {
       id: 5,
       title: "Audi",
       imgSrc: Img5,
       link: "/colors/Audi",
-
     },
   ];
 
@@ -58,14 +55,11 @@ const HomepageBrands = () => {
     <div className="homepageBrands">
       {data.map((item, index) => {
         return (
-
           <Link to={item.link}>
             <div className="pics" key={index}>
-            <img src={item.imgSrc} style={{ width: "100%" }} />
-          </div>
-          
+              <img src={item.imgSrc} style={{ width: "100%" }} />
+            </div>
           </Link>
-        
         );
       })}
     </div>

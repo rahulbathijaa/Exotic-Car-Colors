@@ -86,6 +86,8 @@ const HomepageColors = () => {
 
   return (
     <div
+ 
+
       style={{
         display: "flex",
         flexWrap: "wrap",
@@ -99,14 +101,23 @@ const HomepageColors = () => {
             paddingLeft: "10%",
             paddingRight: "10%",
       }}
+
+      
     >
+
+<div className="container mx-auto">
+    <h2 className="text-5xl flex justify-center">Colors</h2>
+    <h3 className="text-lg text-gray-600 flex justify-center mb-12">
+    Search through specific colors
+    </h3>
+  </div>
       {colors.map((item) => (
         <div
           style={{
             background: item.color,
             height: 250,
             width: 250,
-            margin: 5,
+            margin: 3,
             borderRadius: 5,
           }}
         >

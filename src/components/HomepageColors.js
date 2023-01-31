@@ -5,35 +5,82 @@ const HomepageColors = () => {
   const colors = [
     {
       link: "/",
-      color: "red",
+      name: "McLaren Orange",
+      color: "#FFC43D",
     },
     {
       link: "/",
-      color: "orange",
+      name: "Giallo Orion",
+      color: "#FED136",
     },
     {
       link: "/",
-      color: "#000",
+      name: "Lamborghini Green",
+      color: "#AEFF7E",
     },
     {
       link: "/",
-      color: "red",
+      name: "Rosso Corsa",
+      color: "#D40000",
     },
     {
       link: "/",
-      color: "red",
+      name: "Rosso Fuoco",
+      color: "#D13442",
     },
     {
       link: "/",
-      color: "red",
+      name: "Ferrari Red",
+      color: "#7A212A",
     },
     {
       link: "/",
-      color: "red",
+      name: "Pastel Blue",
+      color: "#A0D8FB",
     },
     {
       link: "/",
-      color: "red",
+      name: "Blu Abu Dhabi",
+      color: "#2885B5",
+    },
+    {
+      link: "/",
+      name: "Azure Blue",
+      color: "#3C566F",
+    },
+    {
+      link: "/",
+      name: "Lamborghini Blue",
+      color: "#00024C",
+    },
+    {
+      link: "/",
+      name: "Ferrari Blue",
+      color: "#163166",
+    },
+    {
+      link: "/",
+      name: "Nardo Grey",
+      color: "#C0C6C8",
+    },
+    {
+      link: "/",
+      name: "Chalk",
+      color: "#A5A4AC",
+    },{
+      link: "/",
+      name: "Lamborghini Grey",
+      color: "#C7D7E7",
+    },
+    {
+      link: "/",
+      name: "Grigio Telesto",
+      color: "#7692A5",
+    },
+    {
+      link: "/",
+      name: "Lamborghini Black",
+      color: "#080D10",
     },
   ];
 
@@ -41,10 +88,16 @@ const HomepageColors = () => {
     <div
       style={{
         display: "flex",
-        // gridTemplateColumns: "1fr 1fr 1fr 1fr",
+        flexWrap: "wrap",
+     // gridTemplateColumns: "1fr 1fr 1fr 1fr",
         width: "100%",
         height: "auto",
         flexWrap: "wrap",
+        justifyItems: "center",
+        justifyContent: "center",
+            alignItems: "center",
+            paddingLeft: "10%",
+            paddingRight: "10%",
       }}
     >
       {colors.map((item) => (
@@ -54,6 +107,7 @@ const HomepageColors = () => {
             height: 250,
             width: 250,
             margin: 5,
+            borderRadius: 5,
           }}
         >
           <a
@@ -69,7 +123,7 @@ const HomepageColors = () => {
             }}
             href={item.link}
           >
-            {item.color}
+            {item.name}
           </a>
         </div>
       ))}

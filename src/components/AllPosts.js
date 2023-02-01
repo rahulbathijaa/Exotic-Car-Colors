@@ -62,18 +62,18 @@ export default function AllPosts() {
   console.log({ allPostsData });
 
   return (
-    <div className="bg-white-100 p-12">
+    <div className="bg-white-100">
       <Navbar />
 
       <HeaderPage />
 
-      <div className="container mx-auto">
+      <div className="container mx-auto ">
         <h2 className="text-5xl flex justify-center cursive">Test12</h2>
         <h3 className="text-lg text-gray-600 flex justify-center mb-12">
           Test123!
         </h3>
       </div>
-      <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+      <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 justify-center">
         {allPostsData &&
           allPostsData.map((post, index) => {
             if (!post.slug || !post.mainImage) return null;

@@ -51,14 +51,18 @@ const HomepageBrands = () => {
 
   return (
     // <h1>Brands</h1>
-    <div className="homepageBrands">
+    <div className="homepageBrands" >
       {data.map((item, index) => {
 
+       
         
         return (
 
           <Link to={item.link}>
+            
             <div className="pics" key={index} >
+
+              
               <img src={item.imgSrc} style={{ width: "100%" }} />
             </div>
           </Link>

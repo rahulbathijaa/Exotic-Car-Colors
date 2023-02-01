@@ -51,7 +51,6 @@ const HomepageBrands = () => {
 
   return (
     // <h1>Brands</h1>
-
     <div className="homepageBrands">
       {data.map((item, index) => {
         return (

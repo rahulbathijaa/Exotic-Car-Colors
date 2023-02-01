@@ -112,36 +112,38 @@ export default function OnePost() {
   return (
     <div className="text-green">
       <Navbar />
-      <div className="max-w-[800px] mt-[-2px] w-full mx-auto text-center flex flex-col justify-center">
-        <p className="text-[#00df9a] font-bold p-2">{postData.color_name}</p>
-        <h1 className="md:text-7xl sm:text-6xl text-4xl font-bold md:py-6">
+      <div className=" max-w-[800px] mt-[-2px] w-full mx-auto text-center flex flex-col justify-center">
+        <p className="text-[#00df9a] md:text-7xl sm:text-6xl text-4xl font-bold p-2">
+          {postData.color_name}
+        </p>
+        <h1 className="md:text-6l sm:text-5l text-3l font-bold md:py-4">
           {postData.short_description}
         </h1>
         <div className="flex justify-center items-center"> </div>
-        <p className="md:text-5xl sm:text-4xl text-xl font-bold py-4">
+        <p className="md:text-5m sm:text-4m text-m font-bold ">
           {postData.hex_text}
         </p>
 
-        <p className="md:text-5xl sm:text-4xl text-xl font-bold py-4">
+        <p className="md:text-5m sm:text-4m text-m font-bold ">
           {postData.rgb_text}
         </p>
 
-        <p className="md:text-5xl sm:text-4xl text-xl font-bold py-4">
+        <p className="md:text-5m sm:text-4m text-m font-bold ">
           {postData.cmyk_text}
         </p>
 
-        <p className="md:text-5xl sm:text-4xl text-xl font-bold py-4">
+        <p className="md:text-5m sm:text-4m text-m font-bold ">
           {postData.ral_text}
         </p>
 
         <div className="w-full bg-white py-16 px-4">
           <div className="max-w-[1240px] mx-auto grid md:grid-cols-2">
             <img
-              className="w-[500px] mx-auto my-4"
+              className=" mx-auto my-4 object-contain w-49 h-64 "
               src={postData.mainImage.asset.url}
               alt="/"
             />
-            <div className="flex flex-col justify-center">
+            <div className="flex flex-col justify-center px-2">
               <p>{postData.long_description}</p>
             </div>
           </div>
@@ -152,7 +154,7 @@ export default function OnePost() {
             <Card post={post} />
           ))}
         </div>
-
+        {/* w-[500px] */}
         <HomepageColors />
         <Footer />
       </div>

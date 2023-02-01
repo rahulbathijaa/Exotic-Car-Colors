@@ -26,13 +26,13 @@ function Footer() {
       <div className="footer-links">
         <div className="footer-link-wrapper">
           <div className="footer-link-items">
-            <Link to="/sign-up">How it works</Link>
+            <Link to="/#colors">Colors</Link>
           </div>
           <div className="footer-link-items">
-            <Link to="/sign-up">How it works</Link>
+            <Link to="/#brands">Brands</Link>
           </div>
           <div className="footer-link-items">
-            <Link to="/sign-up">How it works</Link>
+            <Link to="https://twitter.com/rahulbathijaa">Contact</Link>
           </div>
           <div className="footer-link-items">
             <Link to="/sign-up">How it works</Link>

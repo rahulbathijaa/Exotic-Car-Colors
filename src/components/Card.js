@@ -10,17 +10,18 @@ export default function Card({ post }) {
     <Link to={post.slug.current} key={post.slug.current}>
       {/* <Link to={"/" + post.slug} key={post.slug}> */}
 
+      {/* hover: */}
       <div
-        className="max-w-sm rounded overflow-hidden shadow-lg"
+        className="max-w-sm rounded overflow-hidden shadow-lg border-2 border-black"
         // background-image="../img/card-background.png"
       >
         <div className="bg-(../img/card-background.jpg)"></div>
 
-        {/* <img
-          className="w-full"
+         <img
+          className="w-full content-center rounded-b"
           src={post.mainImage.asset.url}
           alt={post.short_description}
-        /> */}
+        />
         <div className="px-6 py-4 bg-[url('../img/card-background.jpg')]">
           <div className="font-bold text-xl mb-2 text-center">
             {post.color_name}

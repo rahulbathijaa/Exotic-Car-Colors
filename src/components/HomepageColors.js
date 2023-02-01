@@ -67,7 +67,8 @@ const HomepageColors = () => {
       link: "/",
       name: "Chalk",
       color: "#A5A4AC",
-    },{
+    },
+    {
       link: "/",
       name: "Lamborghini Grey",
       color: "#C7D7E7",
@@ -86,38 +87,34 @@ const HomepageColors = () => {
 
   return (
     <div
- 
-
       style={{
         display: "flex",
         flexWrap: "wrap",
-     // gridTemplateColumns: "1fr 1fr 1fr 1fr",
+        // gridTemplateColumns: "1fr 1fr 1fr 1fr",
         width: "100%",
         height: "auto",
         flexWrap: "wrap",
         justifyItems: "center",
         justifyContent: "center",
-            alignItems: "center",
-            paddingLeft: "10%",
-            paddingRight: "10%",
+        alignItems: "center",
+        paddingLeft: "15%",
+        paddingRight: "15%",
+        paddingBottom: "5%",
       }}
-
-      
     >
-
-<div className="container mx-auto">
-    <h2 className="text-5xl flex justify-center">Colors</h2>
-    <h3 className="text-lg text-gray-600 flex justify-center mb-12">
-    Search through specific colors
-    </h3>
-  </div>
+      <div className="container mx-auto pt-10 pb-50">
+        <h2 className="text-5xl flex justify-center">Colors</h2>
+        <h3 className="text-lg text-gray-600 flex justify-center mb-12">
+          Search through specific colors
+        </h3>
+      </div>
       {colors.map((item) => (
         <div
           style={{
             background: item.color,
-            height: 250,
-            width: 250,
-            margin: 3,
+            height: 200,
+            width: 200,
+            margin: 2,
             borderRadius: 5,
           }}
         >
@@ -127,14 +124,13 @@ const HomepageColors = () => {
               background: item.color,
               display: "flex",
               alignItems: "center",
-              height: 100,
-              width: 100,
+              height: 150,
+              width: 150,
               justifyContent: "center",
               margin: "auto",
             }}
             href={item.link}
           >
-            {item.name}
           </a>
         </div>
       ))}

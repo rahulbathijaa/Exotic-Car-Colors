@@ -131,6 +131,7 @@ const HomepageColors = () => {
             }}
             href={item.link}
           >
+             {item.name}
           </a>
         </div>
       ))}

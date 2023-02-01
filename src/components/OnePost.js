@@ -113,7 +113,9 @@ export default function OnePost() {
     <div className="text-green">
       <Navbar />
       <div className=" max-w-[800px] mt-[-2px] w-full mx-auto text-center flex flex-col justify-center">
-        <p className="text-[#00df9a] md:text-7xl sm:text-6xl text-4xl font-bold p-2">{postData.color_name}</p>
+        <p className="text-[#00df9a] md:text-7xl sm:text-6xl text-4xl font-bold p-2">
+          {postData.color_name}
+        </p>
         <h1 className="md:text-6l sm:text-5l text-3l font-bold md:py-4">
           {postData.short_description}
         </h1>

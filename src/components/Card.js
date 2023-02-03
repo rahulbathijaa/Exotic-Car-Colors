@@ -12,7 +12,7 @@ export default function Card({ post }) {
 
       {/* hover: */}
       <div
-        className="max-w-sm rounded overflow-hidden shadow-lg border-black"
+        className="max-w-sm rounded overflow-hidden shadow-lg border-black "
         // background-image="../img/card-background.png"
       >
         <div className="bg-(../img/card-background.jpg)"></div>

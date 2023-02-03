@@ -124,7 +124,7 @@ const HomepageColors = () => {
             key={item.color}
             style={{
               background: item.color,
-
+              
               height: 150,
               width: 150,
               justifyContent: "center",

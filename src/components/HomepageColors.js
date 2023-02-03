@@ -116,22 +116,25 @@ const HomepageColors = () => {
             width: 200,
             margin: 2,
             borderRadius: 5,
+            justifyContent: "center",
+            alignItems: "center",
           }}
         >
           <a
             key={item.color}
             style={{
               background: item.color,
-              display: "flex",
-              alignItems: "center",
+
               height: 150,
               width: 150,
               justifyContent: "center",
               margin: "auto",
+
+            
             }}
             href={item.link}
           >
-             {item.name}
+            {item.name}
           </a>
         </div>
       ))}

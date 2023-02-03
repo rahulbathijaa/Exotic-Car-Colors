@@ -12,42 +12,30 @@ export default function Card({ post }) {
 
       {/* hover: */}
       <div
-        className="max-w-sm rounded overflow-hidden shadow-lg border-2 border-black"
+        className="max-w-sm rounded overflow-hidden shadow-lg border-black"
         // background-image="../img/card-background.png"
       >
         <div className="bg-(../img/card-background.jpg)"></div>
 
         <img
-          className="w-full content-center rounded-b"
+          className="w-full content-left rounded-b"
           src={post.mainImage.asset.url}
           alt={post.short_description}
         />
         <div className="px-6 py-4 bg-[url('../img/card-background.jpg')]">
-          <div className="font-bold text-xl mb-2 text-center">
+          <div className="font-bold text-3xl mb-2 text-left">
             {post.color_name}
           </div>
 
-          <div className="font-bold text-l mb-2 text-center">
+          <div className="font-bold text-m mb-2 text-left">
             {" "}
             {post.short_description}{" "}
           </div>
 
-          <p className="text-gray-700 text-base text-center">
-            {" "}
-            {post.hex_text}
-          </p>
-          <p className="text-gray-700 text-base text-center">
-            {" "}
-            {post.rgb_text}
-          </p>
-          <p className="text-gray-700 text-base text-center">
-            {" "}
-            {post.cmyk_text}
-          </p>
-          <p className="text-gray-700 text-base text-center">
-            {" "}
-            {post.ral_text}
-          </p>
+          <p className="text-gray-700 text-base text-left"> {post.hex_text}</p>
+          <p className="text-gray-700 text-base text-left"> {post.rgb_text}</p>
+          <p className="text-gray-700 text-base text-left"> {post.cmyk_text}</p>
+          <p className="text-gray-700 text-base text-left"> {post.ral_text}</p>
         </div>
       </div>
 

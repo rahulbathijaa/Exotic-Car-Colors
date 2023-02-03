@@ -115,8 +115,10 @@ export default function OnePost() {
 
       <div className=" max-w-[800px] mt-[-2px] w-full mx-auto text-left flex flex-col justify-center">
         <div className=""> 
-          
-          <p className="text-[#00df9a] md:text-9xl sm:text-8xl text-6xl font-bold">
+
+        
+
+          <p className="text-[#00df9a] md:text-9xl sm:text-8xl text-6xl font-bold justify-left">
           {postData.color_name}
         </p>
         <h1 className="md:text-6l sm:text-5l text-3l font-bold ">

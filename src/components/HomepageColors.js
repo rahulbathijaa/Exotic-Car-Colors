@@ -129,8 +129,6 @@ const HomepageColors = () => {
               width: 150,
               justifyContent: "center",
               margin: "auto",
-
-            
             }}
             href={item.link}
           >

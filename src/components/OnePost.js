@@ -112,8 +112,11 @@ export default function OnePost() {
   return (
     <div className="text-green">
       <Navbar />
+
       <div className=" max-w-[800px] mt-[-2px] w-full mx-auto text-left flex flex-col justify-center">
-        <p className="text-[#00df9a] md:text-12xl sm:text-8xl text-6xl font-bold">
+        <div className=""> 
+          
+          <p className="text-[#00df9a] md:text-9xl sm:text-8xl text-6xl font-bold">
           {postData.color_name}
         </p>
         <h1 className="md:text-6l sm:text-5l text-3l font-bold ">
@@ -134,7 +137,15 @@ export default function OnePost() {
 
         <p className="md:text-5m sm:text-4m text-m font-bold ">
           {postData.ral_text}
-        </p>
+        </p> </div>
+        
+       
+        
+        
+        
+    
+
+      
 
         <div className="w-full bg-white py-16 px-4">
           <div className="max-w-[1240px] mx-auto grid md:grid-cols-2">
@@ -149,7 +160,7 @@ export default function OnePost() {
           </div>
         </div>
 
-        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 justify-center items-center">
           {related.map((post) => (
             <Card post={post} />
           ))}

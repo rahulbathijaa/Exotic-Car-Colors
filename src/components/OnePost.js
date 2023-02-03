@@ -112,14 +112,14 @@ export default function OnePost() {
   return (
     <div className="text-green">
       <Navbar />
-      <div className=" max-w-[800px] mt-[-2px] w-full mx-auto text-center flex flex-col justify-center">
-        <p className="text-[#00df9a] md:text-7xl sm:text-6xl text-4xl font-bold p-2">
+      <div className=" max-w-[800px] mt-[-2px] w-full mx-auto text-left flex flex-col justify-center">
+        <p className="text-[#00df9a] md:text-12xl sm:text-8xl text-6xl font-bold">
           {postData.color_name}
         </p>
-        <h1 className="md:text-6l sm:text-5l text-3l font-bold md:py-4">
+        <h1 className="md:text-6l sm:text-5l text-3l font-bold ">
           {postData.short_description}
         </h1>
-        <div className="flex justify-center items-center"> </div>
+        <div className="flex  pl-12"> </div>
         <p className="md:text-5m sm:text-4m text-m font-bold ">
           {postData.hex_text}
         </p>
@@ -128,7 +128,7 @@ export default function OnePost() {
           {postData.rgb_text}
         </p>
 
-        <p className="md:text-5m sm:text-4m text-m font-bold ">
+        <p className="md:text-5m sm:text-4m text-m font-bold">
           {postData.cmyk_text}
         </p>
 

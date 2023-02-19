@@ -1,7 +1,43 @@
-import React from "react";
+import React, { useState } from "react";
 import "./HomepageColors.css";
 
 const HomepageColors = () => {
+
+  function createColorDiv(color) {
+    const [isHovering, setIsHovering] = useState(false);
+
+    const handleMouseEnter = () => {
+      setIsHovering(true);
+    };
+
+    const handleMouseLeave = () => {
+      setIsHovering(false);
+    };
+
+    return (
+      <div
+        key={color.color}
+        onMouseEnter={handleMouseEnter}
+        onMouseLeave={handleMouseLeave}
+        style={{
+          background: color.color,
+          height: 200,
+          width: 200,
+          margin: 2,
+          borderRadius: 5,
+          justifyContent: "center",
+          alignItems: "center",
+          position: "relative",
+        }}
+      >
+        <a href={color.link} style={{ color: "white", textDecoration: "none" }}>
+          {isHovering && color.name}
+        </a>
+      </div>
+    );
+  }
+
+  
   const colors = [
     {
       link: "/",
@@ -84,21 +120,21 @@ const HomepageColors = () => {
       color: "#080D10",
     },
   ];
-
   return (
     <div
       style={{
         display: "flex",
         flexWrap: "wrap",
-        // gridTemplateColumns: "1fr 1fr 1fr 1fr",
         width: "100%",
         height: "auto",
-        flexWrap: "wrap",
-        justifyItems: "center",
+        /* Duplicate flexWrap property */
+        // flexWrap: "wrap",
+        /* Use gridTemplateColumns instead of justifyContent and justifyItems */
+        gridTemplateColumns: "repeat(auto-fill, minmax(200px, 1fr))",
         justifyContent: "center",
         alignItems: "center",
-        paddingLeft: "15%",
-        paddingRight: "15%",
+        paddingLeft: "20%",
+        paddingRight: "20%",
         paddingBottom: "5%",
       }}
     >
@@ -108,36 +144,11 @@ const HomepageColors = () => {
           Search through specific colors
         </h3>
       </div>
-      {colors.map((item) => (
-        <div
-          style={{
-            background: item.color,
-            height: 200,
-            width: 200,
-            margin: 2,
-            borderRadius: 5,
-            justifyContent: "center",
-            alignItems: "center",
-          }}
-        >
-          <a
-            key={item.color}
-            style={{
-              background: item.color,
-              
-              height: 150,
-              width: 150,
-              justifyContent: "center",
-              margin: "auto",
-            }}
-            href={item.link}
-          >
-            {item.name}
-          </a>
-        </div>
-      ))}
+      {/* Missing closing tag for the outer div */}
+      {/* Add a key prop to each child element when mapping */}
+      {colors.map((color) => createColorDiv(color))}
     </div>
   );
-};
+          }  
 
-export default HomepageColors;
+export default HomepageColors

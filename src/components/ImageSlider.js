@@ -20,10 +20,10 @@ const ImageSlider = ({ slides }) => {
   }
 
   return (
-    <section className="slider">
+    <section className="slider" style={{background: `no-repeat url(${SliderData[current].image})`, backgroundSize: '100%'}}>
       <FaArrowAltCircleLeft className="left-arrow" onClick={prevSlide} />
       <FaArrowAltCircleRight className="right-arrow" onClick={nextSlide} />
-      {SliderData.map((slide, index) => {
+      {/* {SliderData.map((slide, index) => {
         return (
           <div
             className={index === current ? "slide active" : "slide"}
@@ -38,7 +38,7 @@ const ImageSlider = ({ slides }) => {
             )}
           </div>
         );
-      })}
+      })} */}
     </section>
   );
 };

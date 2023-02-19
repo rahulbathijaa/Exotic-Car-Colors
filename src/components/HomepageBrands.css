@@ -4,6 +4,7 @@
   grid-gap: 5px;
   align-items: start;
   justify-content: space-between;
+  border-radius: 25px;
 }
 
 .homepageBrands:hover {

@@ -2,6 +2,7 @@ import React, { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
 import sanityClient from "../client.js";
 import BlockContent from "@sanity/block-content-to-react";
+import './OnePost.css'
 import imageUrlBuilder from "@sanity/image-url";
 import HomepageColors from "./HomepageColors.js";
 import Card from "./Card.js";
@@ -112,48 +113,73 @@ export default function OnePost() {
   return (
     <div className="text-green">
       <Navbar />
-      <div className=" max-w-[800px] mt-[-2px] w-full mx-auto text-center flex flex-col justify-center">
-        <p className="text-[#00df9a] md:text-7xl sm:text-6xl text-4xl font-bold p-2">
-          {postData.color_name}
-        </p>
-        <h1 className="md:text-6l sm:text-5l text-3l font-bold md:py-4">
-          {postData.short_description}
-        </h1>
-        <div className="flex justify-center items-center"> </div>
-        <p className="md:text-5m sm:text-4m text-m font-bold ">
-          {postData.hex_text}
-        </p>
+      {/* max-w-[1240px] mt-[-2px] w-full mx-auto text-left flex flex-col justify-left py-16 px-4 */}
+      <div className="">
+      {/* <div class="overflow-hidden pt-16 px-4 mx-auto">
+      <div class="flex flex-wrap -m-8">*/}
+        <div className="max-w-[1640px] mx-auto "> 
+            <div className="p-8 bg-gray-400 ">
+                <h1 className="onepost__header-text font-bold font-heading md:ml-16 ">
+                {postData.color_name}
+                </h1>
+                <h2 className="mb-11 text-2xl text-gray-900 font-medium md:max-w-md md:ml-16">
+                {postData.short_description}
+                </h2>
+                
+                <p className="mb-11 text-lg text-gray-900 font-medium md:max-w-md md:ml-16">
+                {postData.hex_text}
+                </p>
 
-        <p className="md:text-5m sm:text-4m text-m font-bold ">
-          {postData.rgb_text}
-        </p>
+                <p className="mb-11 text-lg text-gray-900 font-medium md:max-w-md md:ml-16">
+                {postData.rgb_text}
+                </p>
 
-        <p className="md:text-5m sm:text-4m text-m font-bold ">
-          {postData.cmyk_text}
-        </p>
+                <p className="mb-11 text-lg text-gray-900 font-medium md:max-w-md md:ml-16">
+                {postData.cmyk_text}
+                </p>
 
-        <p className="md:text-5m sm:text-4m text-m font-bold ">
-          {postData.ral_text}
-        </p>
-
-        <div className="w-full bg-white py-16 px-4">
-          <div className="max-w-[1240px] mx-auto grid md:grid-cols-2">
-            <img
-              className=" mx-auto my-4 object-contain w-49 h-64 "
-              src={postData.mainImage.asset.url}
-              alt="/"
-            />
-            <div className="flex flex-col justify-center px-2">
-              <p>{postData.long_description}</p>
+                <p className="mb-11 text-lg text-gray-900 font-medium md:max-w-md md:ml-16">
+                {postData.ral_text}
+                </p> 
             </div>
-          </div>
-        </div>
 
-        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-          {related.map((post) => (
-            <Card post={post} />
-          ))}
-        </div>
+            {/* text-6xl md:text-8xl */}
+
+            <div className="bg-white p-8">
+                <div className="max-w-[1240px] mx-auto grid md:grid-cols-2 place-items-center	">
+                    <img
+                    className="flex flex-col object-contain w-49 h-64 md:justify-center "
+                    src={postData.mainImage.asset.url}
+                    alt="/"/>
+                    <div className=" ">
+                        <p>{postData.long_description}</p>
+                    </div>
+                </div>
+            </div>
+
+            {/* md:pl-24 */}
+            {/* md:pr-28 */}
+
+            <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-4 justify-center items-center">
+                {related.map((post) => (
+                <Card post={post} />
+                ))}
+            </div>
+        </div> 
+        {/*</div> 
+        </div> */}
+       
+       
+        
+        
+        
+    
+
+      
+
+        
+
+        
         {/* w-[500px] */}
         <HomepageColors />
         <Footer />

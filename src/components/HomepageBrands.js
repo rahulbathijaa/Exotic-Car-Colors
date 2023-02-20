@@ -56,7 +56,7 @@ const HomepageBrands = () => {
         return (
           <Link to={item.link}>
             <div className="pics" key={index}>
-              <img src={item.imgSrc} style={{ width: "100%" , borderRadius: "5px"}} />
+              <img src={item.imgSrc} style={{ width: "100%" , borderRadius: "5px"}} className="gif" />
             </div>
           </Link>
         );
@@ -66,3 +66,7 @@ const HomepageBrands = () => {
 };
 
 export default HomepageBrands;
+
+
+
+

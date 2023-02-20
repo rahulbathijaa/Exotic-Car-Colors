@@ -9,19 +9,6 @@ import Card from "./Card.js";
 import Footer from "./Footer.js";
 import Navbar from "./Navbar.js";
 
-function getContrastColor(hexColor) {
-  // Convert hex color to RGB
-  const red = parseInt(hexColor.substr(1, 2), 16);
-  const green = parseInt(hexColor.substr(3, 2), 16);
-  const blue = parseInt(hexColor.substr(5, 2), 16);
-
-  // Calculate relative luminance
-  const luminance = (0.2126 * red + 0.7152 * green + 0.0722 * blue) / 255;
-
-  // Return black or white depending on luminance
-  return luminance > 0.5 ? '#000' : '#fff';
-}
-
 const builder = imageUrlBuilder(sanityClient);
 function urlFor(source) {
   return builder.image(source);
@@ -123,71 +110,57 @@ export default function OnePost() {
 
   if (!postData) return <div>Loading...</div>;
 
-  
-
   return (
     <div className="text-green">
-      <Navbar hex_text={postData.hex_text}/>
+      <Navbar />
       {/* max-w-[1240px] mt-[-2px] w-full mx-auto text-left flex flex-col justify-left py-16 px-4 */}
       <div className="">
       {/* <div class="overflow-hidden pt-16 px-4 mx-auto">
       <div class="flex flex-wrap -m-8">*/}
         <div className="max-w-[1640px] mx-auto "> 
-            {/* <div className="p-8 bg-red-400 "> */}
-            <div className="p-8" style={{ backgroundColor: postData.hex_text }}>
-
-                <h1 className="onepost__header-text font-bold font-heading md:ml-20" style={{ color: getContrastColor(postData.hex_text) }}>
+            <div className="p-8 bg-gray-400 ">
+                <h1 className="onepost__header-text font-bold font-heading md:ml-16 ">
                 {postData.color_name}
                 </h1>
-                <h2 className="mb-11 text-2xl text-gray-900 font-medium md:max-w-md md:ml-20" style={{ color: getContrastColor(postData.hex_text) }} >
+                <h2 className="mb-11 text-2xl text-gray-900 font-medium md:max-w-md md:ml-16">
                 {postData.short_description}
                 </h2>
                 
-                <p className="mb-11 text-lg text-gray-900 font-medium md:max-w-md md:ml-20" style={{ color: getContrastColor(postData.hex_text) }}>
+                <p className="mb-11 text-lg text-gray-900 font-medium md:max-w-md md:ml-16">
                 {postData.hex_text}
                 </p>
 
-                <p className="mb-11 text-lg text-gray-900 font-medium md:max-w-md md:ml-20 " style={{ color: getContrastColor(postData.hex_text) }}>
+                <p className="mb-11 text-lg text-gray-900 font-medium md:max-w-md md:ml-16">
                 {postData.rgb_text}
                 </p>
 
-                <p className="mb-11 text-lg text-gray-900 font-medium md:max-w-md md:ml-20" style={{ color: getContrastColor(postData.hex_text) }}>
+                <p className="mb-11 text-lg text-gray-900 font-medium md:max-w-md md:ml-16">
                 {postData.cmyk_text}
                 </p>
 
-                <p className="mb-11 text-lg text-gray-900 font-medium md:max-w-md md:ml-20" style={{ color: getContrastColor(postData.hex_text) }}>
+                <p className="mb-11 text-lg text-gray-900 font-medium md:max-w-md md:ml-16">
                 {postData.ral_text}
                 </p> 
             </div>
 
-
-
-
             {/* text-6xl md:text-8xl */}
 
             <div className="bg-white p-8">
-                <div className="max-w-[1240px] mx-auto grid md:grid-cols-2 	">
+                <div className="max-w-[1240px] mx-auto grid md:grid-cols-2 place-items-center	">
                     <img
-                    className="flex flex-col object-contain w-49 h-64  content-end	justify-self-end pr-5  "
+                    className="flex flex-col object-contain w-49 h-64 md:justify-center "
                     src={postData.mainImage.asset.url}
                     alt="/"/>
-                    <div className="align-top	pl-5 pr-4 ">
+                    <div className=" ">
                         <p>{postData.long_description}</p>
                     </div>
                 </div>
             </div>
 
-
-
-
-
-
-
-
             {/* md:pl-24 */}
             {/* md:pr-28 */}
 
-            <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-4 place-items-center	py-1	">
+            <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-4 justify-center items-center">
                 {related.map((post) => (
                 <Card post={post} />
                 ))}
@@ -198,7 +171,14 @@ export default function OnePost() {
        
        
         
-  
+        
+        
+    
+
+      
+
+        
+
         
         {/* w-[500px] */}
         <HomepageColors />
@@ -206,12 +186,7 @@ export default function OnePost() {
       </div>
     </div>
 
- 
-  );
-}
-
-
-   // <div className="bg-gray-200 min-h-screen p-12">
+    // <div className="bg-gray-200 min-h-screen p-12">
     //   <div className="container shadow-lg mx-auto bg-green-100 rounded-lg">
     //     <div className="relative">
     //       <div className="absolute h-full w-full flex items-center justify-center p-8">
@@ -243,3 +218,5 @@ export default function OnePost() {
     //     </div>
     //   </div>
     // </div>
+  );
+}

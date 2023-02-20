@@ -30,7 +30,7 @@ const HomepageColors = () => {
           position: "relative",
         }}
       >
-        <a href={color.link} style={{ color: "black", textDecoration: "none" }}>
+        <a href={color.link} style={{ color: "white", textDecoration: "none" }}>
           {isHovering && color.name}
         </a>
       </div>

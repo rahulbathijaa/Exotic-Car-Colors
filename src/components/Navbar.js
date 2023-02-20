@@ -2,16 +2,15 @@ import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import "./Navbar.css";
 
-function Navbar(props) {
+function Navbar() {
   const [click, setClick] = useState(false);
+
   const handleClick = () => setClick(!click);
   const closeMobileMenu = () => setClick(false);
-  const { hex_text } = props;
-
 
   return (
     <>
-      <nav className="navbar" style={{ backgroundColor: hex_text }}>
+      <nav className="navbar">
         <div className="navbar-container">
           <Link to="/" className="navbar-logo">
             ExoticCarColors

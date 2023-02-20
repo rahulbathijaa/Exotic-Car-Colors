@@ -1,4 +1,59 @@
 .homepageBrands {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 5px;
+    align-items: start;
+    justify-content: space-between;
+    border-radius: 25px;
+  }
+  
+  img {
+    animation-play-state: paused;
+    animation-iteration-count: infinite;
+    animation-timing-function: steps(1);
+    animation-duration: 3s;
+  }
+  
+  img:hover {
+    animation-play-state: running;
+  }
+  
+  .gif-image {
+    background-repeat: no-repeat;
+  }
+  
+  .gif-playing {
+    background-position: 0 0;
+    animation: playGif 1s steps(8) forwards;
+  }
+  
+  @keyframes playGif {
+    from {
+      background-position: 0 0;
+    }
+    to {
+      background-position: -1600px 0;
+    }
+  }
+  
+
+
+/* .homepageBrands {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 5px;
+  align-items: start;
+  justify-content: space-between;
+  border-radius: 25px;
+}
+
+.gif {
+  animation-play-state: paused;
+}
+ */
+
+
+/* .homepageBrands {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   grid-gap: 5px;
@@ -10,6 +65,16 @@
 .homepageBrands:hover {
   --_p: 100%;
 }
+
+
+.gif {
+    animation-play-state: paused;
+  }
+  
+  .gif:hover {
+    animation-play-state: running;
+  } */
+
 
 /* .homepageBrands{
     -webkit-column-count: 3;

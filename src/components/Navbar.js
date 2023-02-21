@@ -7,13 +7,13 @@ function Navbar(props) {
   const handleClick = () => setClick(!click);
   const closeMobileMenu = () => setClick(false);
   const { hex_text } = props;
-  const textColor = parseInt(hex_text.substring(1), 16) > 0xffffff / 2 ? "#000" : "#fff";
+  // const textColor = parseInt(hex_text.substring(1), 16) > 0xffffff / 2 ? "#000" : "#fff";
 
 
 
   return (
     <>
-      <nav className="navbar" style={{ backgroundColor: hex_text, color: textColor }}>
+      <nav className="navbar" style={{ backgroundColor: hex_text }}>
         <div className="navbar-container">
           <Link to="/" className="navbar-logo">
             ExoticCarColors

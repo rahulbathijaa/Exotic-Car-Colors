@@ -15,7 +15,7 @@ const HomepageColors = () => {
     };
 
     return (
-      <div
+      <a href={color.link}
         key={color.color}
         onMouseEnter={handleMouseEnter}
         onMouseLeave={handleMouseLeave}
@@ -33,89 +33,89 @@ const HomepageColors = () => {
         <a href={color.link} style={{ color: "black", textDecoration: "none" }}>
           {isHovering && color.name}
         </a>
-      </div>
+      </a>
     );
   }
 
   
   const colors = [
     {
-      link: "/",
+      link: "/mclaren-orange",
       name: "McLaren Orange",
       color: "#FFC43D",
     },
     {
-      link: "/",
+      link: "/giallo-orion",
       name: "Giallo Orion",
       color: "#FED136",
     },
     {
-      link: "/",
+      link: "/lamborghini-green",
       name: "Lamborghini Green",
       color: "#AEFF7E",
     },
     {
-      link: "/",
+      link: "/rosso-corsa",
       name: "Rosso Corsa",
       color: "#D40000",
     },
     {
-      link: "/",
+      link: "/rosso-fuoco",
       name: "Rosso Fuoco",
       color: "#D13442",
     },
     {
-      link: "/",
+      link: "/ferrari-red",
       name: "Ferrari Red",
       color: "#7A212A",
     },
     {
-      link: "/",
+      link: "/pastel-blue",
       name: "Pastel Blue",
       color: "#A0D8FB",
     },
     {
-      link: "/",
+      link: "/blu-abu-dhabi",
       name: "Blu Abu Dhabi",
       color: "#2885B5",
     },
     {
-      link: "/",
+      link: "/azure-blue",
       name: "Azure Blue",
       color: "#3C566F",
     },
     {
-      link: "/",
+      link: "/lamborghini-blue",
       name: "Lamborghini Blue",
       color: "#00024C",
     },
     {
-      link: "/",
+      link: "/ferrari-blue",
       name: "Ferrari Blue",
       color: "#163166",
     },
     {
-      link: "/",
+      link: "/nardo-grey",
       name: "Nardo Grey",
       color: "#C0C6C8",
     },
     {
-      link: "/",
+      link: "/chalk",
       name: "Chalk",
       color: "#A5A4AC",
     },
     {
-      link: "/",
+      link: "/lamborghini-grey",
       name: "Lamborghini Grey",
       color: "#C7D7E7",
     },
     {
-      link: "/",
+      link: "/grigio-telesto",
       name: "Grigio Telesto",
       color: "#7692A5",
     },
     {
-      link: "/",
+      link: "/lamborghini-black",
       name: "Lamborghini Black",
       color: "#080D10",
     },

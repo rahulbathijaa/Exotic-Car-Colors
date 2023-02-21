@@ -1,10 +1,12 @@
 .footer-container {
-  background-color: #242424;
+  /* background-color: #242424; */
   padding: 4rem 0 2rem 0;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  display: flex;
+  justify-content: center;
 }
 
 .footer-subscription {
@@ -15,7 +17,7 @@
   text-align: center;
   margin-bottom: 24px;
   padding: 24px;
-  color: #fff;
+  color: #000;
 }
 
 .footer-subscription-text {
@@ -31,19 +33,36 @@
   border: none;
   font-size: 18px;
   margin-bottom: 16px;
-  border: 1px solid #fff;
+  border: 1px solid #000;
 }
 
 .footer-links {
-  width: 100%;
-  max-width: 1000px;
+  /* remove justify-content: center; */
   display: flex;
-  justify-content: center;
+  flex-direction: column;
+  align-items: center;
 }
 
 .footer-link-wrapper {
   display: flex;
+  flex-wrap: wrap; /* add this to wrap the links when they exceed the width of the container */
+  justify-content: center;
+  margin: 16px 0; /* add this to create space between the links and the container */
 }
+
+
+/* .footer-links {
+  width: 100%;
+  max-width: 1000px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  
+}
+
+.footer-link-wrapper {
+  display: flex;
+} */
 
 .footer-link-items {
   display: flex;
@@ -53,6 +72,7 @@
   text-align: left;
   width: 160px;
   box-sizing: border-box;
+  align-items: center;
 }
 
 .footer-link-items h2 {
@@ -60,11 +80,11 @@
 }
 
 .footer-link-items > h2 {
-  color: #fff;
+  color: #000;
 }
 
 .footer-link-items a {
-  color: #fff;
+  color: #000;
   text-decoration: none;
   margin-bottom: 8px;
 }

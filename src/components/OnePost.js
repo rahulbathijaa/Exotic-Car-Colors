@@ -85,6 +85,8 @@ export default function OnePost() {
       console.log("bruh", relatedPosts);
       setRelated(relatedPosts);
 
+      
+
       // For bigbodyrb: 2 and 3
     }
 
@@ -134,7 +136,7 @@ export default function OnePost() {
       <div class="flex flex-wrap -m-8">*/}
         <div className="max-w-[1640px] mx-auto "> 
             {/* <div className="p-8 bg-red-400 "> */}
-            <div className="p-8 pb-12" style={{ backgroundColor: postData.hex_text }}>
+            <div className="p-8 pb-16" style={{ backgroundColor: postData.hex_text }}>
 
                 <h1 className="onepost__header-text font-bold font-heading md:ml-20" style={{ color: getContrastColor(postData.hex_text) }}>
                 {postData.color_name}
@@ -177,7 +179,7 @@ export default function OnePost() {
                 </div>
             </div> */}
 
-            <div className="bg-white p-8 py-7">
+            <div className="bg-white p-8 py-16">
   <div className="max-w-[1240px] mx-auto grid md:grid-cols-2">
     <div className="flex justify-center md:justify-start">
       <img
@@ -201,8 +203,9 @@ export default function OnePost() {
 
             {/* md:pl-24 */}
             {/* md:pr-28 */}
-
+            <h2 className="text-5xl flex justify-center py-6 pb-10">Related Colors</h2>
             <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-4 place-items-center	py-1	">
+              
                 {related.map((post) => (
                 <Card post={post} />
                 ))}
@@ -211,17 +214,12 @@ export default function OnePost() {
         {/*</div> 
         </div> */}
        
-       
-        
-  
         
         {/* w-[500px] */}
         <HomepageColors />
-        <Footer />
+        <Footer hex_text={postData.hex_text}/>
       </div>
     </div>
-
- 
   );
 }
 

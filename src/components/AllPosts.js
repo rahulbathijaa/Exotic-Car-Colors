@@ -73,7 +73,7 @@ export default function AllPosts() {
           Test123!
         </h3>
       </div>
-      <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 justify-center items-center">
+      <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 justify-items-center">
         {allPostsData &&
           allPostsData.map((post, index) => {
             if (!post.slug || !post.mainImage) return null;

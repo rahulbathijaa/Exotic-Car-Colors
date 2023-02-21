@@ -134,7 +134,7 @@ export default function OnePost() {
       <div class="flex flex-wrap -m-8">*/}
         <div className="max-w-[1640px] mx-auto "> 
             {/* <div className="p-8 bg-red-400 "> */}
-            <div className="p-8" style={{ backgroundColor: postData.hex_text }}>
+            <div className="p-8 pb-12" style={{ backgroundColor: postData.hex_text }}>
 
                 <h1 className="onepost__header-text font-bold font-heading md:ml-20" style={{ color: getContrastColor(postData.hex_text) }}>
                 {postData.color_name}
@@ -165,17 +165,32 @@ export default function OnePost() {
 
             {/* text-6xl md:text-8xl */}
 
-            <div className="bg-white p-8">
+            {/* <div className="bg-white p-8">
                 <div className="max-w-[1240px] mx-auto grid md:grid-cols-2 	">
                     <img
-                    className="flex flex-col object-contain w-49 h-64  content-end	justify-self-end pr-5  "
+                    className="flex flex-col object-contain w-49 h-64  content-end	justify-self-end pr-5 md:content-start col-start-1"
                     src={postData.mainImage.asset.url}
                     alt="/"/>
                     <div className="align-top	pl-5 pr-4 ">
                         <p>{postData.long_description}</p>
                     </div>
                 </div>
-            </div>
+            </div> */}
+
+            <div className="bg-white p-8 py-7">
+  <div className="max-w-[1240px] mx-auto grid md:grid-cols-2">
+    <div className="flex justify-center md:justify-start">
+      <img
+        className="flex flex-col object-contain w-49 h-64 content-end justify-self-end pr-5 md:content-start mx-auto"
+        src={postData.mainImage.asset.url}
+        alt="/"
+      />
+    </div>
+    <div className=" pl-5 pr-4">
+      <p>{postData.long_description}</p>
+    </div>
+  </div>
+</div>
 
 
 

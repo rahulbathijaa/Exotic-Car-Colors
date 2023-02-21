@@ -9,10 +9,10 @@ import AllPosts from "./AllPosts";
 // import Img4 from '../img/mclaren-car.gif'
 // import Img5 from '../img/audi-car.gif'
 
-import Img1 from "../img/Ferrari-resized.gif";
-import Img2 from "../img/Lamborghini-resized.gif";
-import Img3 from "../img/porsche-car.gif";
-import Img4 from "../img/Mclaren-resized.gif";
+import Img1 from "../img/ferrari-brands-photo.png";
+import Img2 from "../img/lamborghini-brands-photo.png";
+import Img3 from "../img/porsche-brands-photo.png";
+import Img4 from "../img/mclaren-resized-photo.png";
 import Img5 from "../img/Audi-resized.gif";
 
 const HomepageBrands = () => {
@@ -51,6 +51,7 @@ const HomepageBrands = () => {
 
   return (
     // <h1>Brands</h1>
+    
     <div className="homepageBrands">
       {data.map((item, index) => {
         return (

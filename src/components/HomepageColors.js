@@ -139,8 +139,8 @@ const HomepageColors = () => {
       }}
     >
       <div className="container mx-auto pt-10 pb-50">
-        <h2 className="text-5xl flex justify-center">Colors</h2>
-        <h3 className="text-lg text-gray-600 flex justify-center mb-12">
+        <h2 className="text-5xl flex justify-left pl-5">Colors</h2>
+        <h3 className="text-lg text-gray-600 flex justify-left mb-12 pl-5">
           Search through specific colors
         </h3>
       </div>

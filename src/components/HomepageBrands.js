@@ -13,7 +13,7 @@ import Img1 from "../img/ferrari-brands-photo.png";
 import Img2 from "../img/lamborghini-brands-photo.png";
 import Img3 from "../img/porsche-brands-photo.png";
 import Img4 from "../img/mclaren-resized-photo.png";
-import Img5 from "../img/Audi-resized.gif";
+import Img5 from "../img/grey-audi-resized.png";
 
 const HomepageBrands = () => {
   let data = [
@@ -51,20 +51,56 @@ const HomepageBrands = () => {
 
   return (
     // <h1>Brands</h1>
+
+
+      <div>
+        <div className="container mx-auto pt-10 pb-50">
+          <h2 className="text-5xl flex justify-left pl-5">Brands</h2>
+          <h3 className="text-lg text-gray-600 flex justify-left mb-12 pl-5">
+            Search through specific brands
+          </h3>
+        </div>
+  
+        <div className="homepageBrands">
+          {data.map((item, index) => {
+            return (
+              <Link to={item.link}>
+                <div className="pics" key={index} data-title={item.title}> 
+                  <img
+                    src={item.imgSrc}
+                    style={{ width: "100%", borderRadius: "5px" }}
+                    className="gif"
+                  />
+                </div>
+              </Link>
+            );
+          })}
+        </div>
+      </div>
+    );
+  };
     
-    <div className="homepageBrands">
-      {data.map((item, index) => {
-        return (
-          <Link to={item.link}>
-            <div className="pics" key={index}>
-              <img src={item.imgSrc} style={{ width: "100%" , borderRadius: "5px"}} className="gif" />
-            </div>
-          </Link>
-        );
-      })}
-    </div>
-  );
-};
+//  <div className="container mx-auto pt-10 pb-50">
+//         <h2 className="text-5xl flex justify-left pl-5">Colors</h2>
+//         <h3 className="text-lg text-gray-600 flex justify-left mb-12 pl-5">
+//           Search through specific colors
+//         </h3>
+//       </div>
+    
+//     <div className="homepageBrands">
+      
+//       {data.map((item, index) => {
+//         return (
+//           <Link to={item.link}>
+//             <div className="pics" key={index}>
+//               <img src={item.imgSrc} style={{ width: "100%" , borderRadius: "5px"}} className="gif" />
+//             </div>
+//           </Link>
+//         );
+//       })}
+//     </div>
+//   );
+// };
 
 export default HomepageBrands;
 

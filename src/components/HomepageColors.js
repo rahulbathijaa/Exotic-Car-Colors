@@ -14,35 +14,79 @@ const HomepageColors = () => {
       setIsHovering(false);
     };
 
+    function getContrastRatio(color1, color2) {
+      // Convert colors to RGB format
+      const rgb1 = hexToRgb(color1);
+      const rgb2 = hexToRgb(color2);
+
+      // Calculate relative luminance for each color
+      const l1 = getRelativeLuminance(rgb1.r, rgb1.g, rgb1.b);
+      const l2 = getRelativeLuminance(rgb2.r, rgb2.g, rgb2.b);
+
+      // Calculate contrast ratio between the two colors
+      const ratio = (Math.max(l1, l2) + 0.05) / (Math.min(l1, l2) + 0.05);
+
+      return ratio;
+    }
+
+    // Function to convert hex color to RGB format
+    function hexToRgb(hex) {
+      const r = parseInt(hex.substring(1, 3), 16);
+      const g = parseInt(hex.substring(3, 5), 16);
+      const b = parseInt(hex.substring(5, 7), 16);
+      return { r, g, b };
+    }
+
+    // Function to calculate relative luminance for an RGB color
+    function getRelativeLuminance(r, g, b) {
+      const rsrgb = r / 255;
+      const gsrgb = g / 255;
+      const bsrgb = b / 255;
+
+      const rlinear = rsrgb <= 0.03928 ? rsrgb / 12.92 : Math.pow((rsrgb + 0.055) / 1.055, 2.4);
+      const glinear = gsrgb <= 0.03928 ? gsrgb / 12.92 : Math.pow((gsrgb + 0.055) / 1.055, 2.4);
+      const blinear = bsrgb <= 0.03928 ? bsrgb / 12.92 : Math.pow((bsrgb + 0.055) / 1.055, 2.4);
+
+      const luminance = 0.2126 * rlinear + 0.7152 * glinear + 0.0722 * blinear;
+      return luminance;
+    }
+
+    
+
+    // Determine appropriate contrasting color for the name
+    const contrastColor = getContrastRatio(color.color, "#000000") >= getContrastRatio(color.color, "#FFFFFF") ? "#000000" : "#FFFFFF";
+
     return (
-      <a href={color.link}
-        key={color.color}
-        onMouseEnter={handleMouseEnter}
-        onMouseLeave={handleMouseLeave}
-        style={{
-          background: color.color,
-          height: 200,
-          width: 200,
-          margin: 2,
-          borderRadius: 5,
-          justifyContent: "center",
-          alignItems: "center",
-          position: "relative",
-        }}
-      >
-        <a href={color.link} style={{ color: "black", textDecoration: "none" }}>
-          {isHovering && color.name}
-        </a>
-      </a>
-    );
+
+    <a href={color.link}
+    key={color.color}
+    onMouseEnter={handleMouseEnter}
+    onMouseLeave={handleMouseLeave}
+    style={{
+      background: color.color,
+      height: 200,
+      width: 200,
+      margin: 2,
+      borderRadius: 5,
+      flexDirection: "column",
+ 
+    }}
+  >
+    <a href={color.link} style={{ color: contrastColor, textDecoration: "none", flex: 1,  textAlign: "center" }}>
+      {isHovering && color.name}
+    </a>
+  </a>
+);
+
+
   }
 
   
   const colors = [
     {
-      link: "/mclaren-orange",
-      name: "McLaren Orange",
-      color: "#FFC43D",
+      link: "/lamborghini-green",
+      name: "Lamborghini Green",
+      color: "#AEFF7E",
     },
     {
       link: "/giallo-orion",
@@ -50,24 +94,9 @@ const HomepageColors = () => {
       color: "#FED136",
     },
     {
-      link: "/lamborghini-green",
-      name: "Lamborghini Green",
-      color: "#AEFF7E",
-    },
-    {
-      link: "/rosso-corsa",
-      name: "Rosso Corsa",
-      color: "#D40000",
-    },
-    {
-      link: "/rosso-fuoco",
-      name: "Rosso Fuoco",
-      color: "#D13442",
-    },
-    {
-      link: "/ferrari-red",
-      name: "Ferrari Red",
-      color: "#7A212A",
+      link: "/mclaren-orange",
+      name: "McLaren Orange",
+      color: "#FFC43D",
     },
     {
       link: "/pastel-blue",
@@ -75,19 +104,14 @@ const HomepageColors = () => {
       color: "#A0D8FB",
     },
     {
-      link: "/blu-abu-dhabi",
-      name: "Blu Abu Dhabi",
-      color: "#2885B5",
-    },
-    {
       link: "/azure-blue",
       name: "Azure Blue",
       color: "#3C566F",
     },
     {
-      link: "/lamborghini-blue",
-      name: "Lamborghini Blue",
-      color: "#00024C",
+      link: "/blu-abu-dhabi",
+      name: "Blu Abu Dhabi",
+      color: "#2885B5",
     },
     {
       link: "/ferrari-blue",
@@ -95,14 +119,24 @@ const HomepageColors = () => {
       color: "#163166",
     },
     {
-      link: "/nardo-grey",
-      name: "Nardo Grey",
-      color: "#C0C6C8",
+      link: "/lamborghini-blue",
+      name: "Lamborghini Blue",
+      color: "#00024C",
     },
     {
-      link: "/chalk",
-      name: "Chalk",
-      color: "#A5A4AC",
+      link: "/rosso-fuoco",
+      name: "Rosso Fuoco",
+      color: "#D13442",
+    },
+    {
+      link: "/rosso-corsa",
+      name: "Rosso Corsa",
+      color: "#D40000",
+    },
+    {
+      link: "/ferrari-red",
+      name: "Ferrari Red",
+      color: "#7A212A",
     },
     {
       link: "/lamborghini-grey",
@@ -114,6 +148,18 @@ const HomepageColors = () => {
       name: "Grigio Telesto",
       color: "#7692A5",
     },
+   
+    {
+      link: "/nardo-grey",
+      name: "Nardo Grey",
+      color: "#C0C6C8",
+    },
+    {
+      link: "/chalk",
+      name: "Chalk",
+      color: "#A5A4AC",
+    },
+    
     {
       link: "/lamborghini-black",
       name: "Lamborghini Black",

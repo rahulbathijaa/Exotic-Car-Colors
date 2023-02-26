@@ -1,3 +1,5 @@
+
+
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import "./Navbar.css";
@@ -6,16 +8,13 @@ function Navbar(props) {
   const [click, setClick] = useState(false);
   const handleClick = () => setClick(!click);
   const closeMobileMenu = () => setClick(false);
-  const { hex_text } = props;
-  // const textColor = parseInt(hex_text.substring(1), 16) > 0xffffff / 2 ? "#000" : "#fff";
-
-
+  const { hex_text, textColor } = props;
 
   return (
     <>
       <nav className="navbar" style={{ backgroundColor: hex_text }}>
         <div className="navbar-container">
-          <Link to="/" className="navbar-logo">
+          <Link to="/" className="navbar-logo" style={{ color: textColor }}>
             ExoticCarColors
           </Link>
           <div className="menu-icon" onClick={handleClick}>
@@ -27,6 +26,7 @@ function Navbar(props) {
                 to="/#colors"
                 className="nav-links" 
                 onClick={closeMobileMenu}
+                style={{ color: textColor }}
               >
                 Colors
               </Link>
@@ -36,18 +36,22 @@ function Navbar(props) {
                 to="/#brands"
                 className="nav-links"
                 onClick={closeMobileMenu}
+                style={{ color: textColor }}
               >
                 Brands
               </Link>
             </li>
             <li className="nav-item">
-              <Link
-                to="https://twitter.com/rahulbathijaa"
+              <a
+                href="https://twitter.com/rahulbathijaa"
                 className="nav-links"
                 onClick={closeMobileMenu}
+                style={{ color: textColor }}
+                target="_blank"
+                rel="noopener noreferrer"
               >
                 Contact
-              </Link>
+              </a>
             </li>
           </ul>
         </div>

@@ -9,6 +9,7 @@ import Card from "./Card.js";
 import Footer from "./Footer.js";
 import Navbar from "./Navbar.js";
 
+
 function getContrastColor(hexColor) {
   // Convert hex color to RGB
   const red = parseInt(hexColor.substr(1, 2), 16);
@@ -124,12 +125,14 @@ export default function OnePost() {
   }, [slug]);
 
   if (!postData) return <div>Loading...</div>;
+  const textColor = getContrastColor(postData.hex_text);
+
 
   
 
   return (
     <div className="text-green">
-      <Navbar hex_text={postData.hex_text}/>
+      <Navbar hex_text={postData.hex_text} textColor={textColor}/>
       {/* max-w-[1240px] mt-[-2px] w-full mx-auto text-left flex flex-col justify-left py-16 px-4 */}
       <div className="">
       {/* <div class="overflow-hidden pt-16 px-4 mx-auto">
@@ -195,15 +198,7 @@ export default function OnePost() {
 </div>
 
 
-
-
-
-
-
-
-            {/* md:pl-24 */}
-            {/* md:pr-28 */}
-            <h2 className="text-5xl flex justify-center py-6 pb-10">Related Colors</h2>
+            <h2 className="text-5xl flex justify-left py-6 pb-10 md:ml-20">Related Colors</h2>
             <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-4 place-items-center	py-1	">
               
                 {related.map((post) => (
@@ -211,11 +206,6 @@ export default function OnePost() {
                 ))}
             </div>
         </div> 
-        {/*</div> 
-        </div> */}
-       
-        
-        {/* w-[500px] */}
         <HomepageColors />
         <Footer hex_text={postData.hex_text}/>
       </div>
@@ -224,35 +214,3 @@ export default function OnePost() {
 }
 
 
-   // <div className="bg-gray-200 min-h-screen p-12">
-    //   <div className="container shadow-lg mx-auto bg-green-100 rounded-lg">
-    //     <div className="relative">
-    //       <div className="absolute h-full w-full flex items-center justify-center p-8">
-    //         <div className="bg-white bg-opacity-75 rounded p-12">
-    //           <h2 className="cursive text-3xl lg:text-6xl mb-4">
-    //             {postData.brand_type}
-    //           </h2>
-    //           <div className="flex justify-center text-gray-800">
-
-    //             <h4 className="cursive flex items-center pl-2 text-2xl">
-    //               {postData.short_description}
-    //             </h4>
-    //           </div>
-    //         </div>
-    //       </div>
-    //       <img
-    //         className="w-full object-cover rounded-t"
-    //         src={urlFor(postData.mainImage).url()}
-    //         alt=""
-    //         style={{ height: "400px" }}
-    //       />
-    //     </div>
-    //     <div className="px-16 lg:px-48 py-12 lg:py-20 prose lg:prose-xl max-w-full">
-    //       <BlockContent
-    //         blocks={postData.long_description}
-    //         projectId={sanityClient.clientConfig.projectId}
-    //         dataset={sanityClient.clientConfig.dataset}
-    //       />
-    //     </div>
-    //   </div>
-    // </div>

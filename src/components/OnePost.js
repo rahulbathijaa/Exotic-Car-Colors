@@ -192,7 +192,8 @@ export default function OnePost() {
       />
     </div>
     <div className=" pl-5 pr-4">
-      <p>{postData.long_description}</p>
+    <h4 className="text-3xl font-bold mb-4">{postData.color_name}</h4>
+    <p className="max-w-md break-word">{postData.long_description}</p>
     </div>
   </div>
 </div>

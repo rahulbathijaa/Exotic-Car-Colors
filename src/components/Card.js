@@ -7,21 +7,32 @@ import { getByTitle } from "@testing-library/react";
 
 export default function Card({ post }) {
   return (
-    <Link to={post.slug.current} key={post.slug.current}>
-      {/* <Link to={"/" + post.slug} key={post.slug}> */}
+    // <Link to={`${post.slug?.current}`} key={post.slug?.current}>
+    <Link to={`${post.slug && post.slug.current}`} key={post.slug && post.slug.current}>
 
-      {/* hover: */}
+  
       <div
         className="max-w-sm rounded overflow-hidden shadow-lg border-black "
         // background-image="../img/card-background.png"
+        style={{ backgroundImage: `url(../img/card-background.png)` }}
+
       >
         <div className="bg-(../img/card-background.jpg)"></div>
-
+     
+{/* 
         <img
           className="w-full content-left rounded-b"
           src={post.mainImage.asset.url}
           alt={post.short_description}
-        />
+        /> */}
+
+{post.mainImage && post.mainImage.asset && (
+          <img
+            className="w-full content-left rounded-b"
+            src={post.mainImage.asset.url}
+            alt={post.short_description}
+          />
+        )}
         <div className="px-6 py-4 bg-[url('../img/card-background.jpg')]">
           <div className="font-bold text-3xl mb-2 text-left">
             {post.color_name}

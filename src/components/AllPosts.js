@@ -27,6 +27,7 @@ import { useParams } from "react-router-dom";
 import Navbar from "./Navbar.js";
 import HeaderPage from "./HeaderPage.js";
 
+
 export default function AllPosts() {
   const [allPostsData, setAllPosts] = useState(null);
   const { brand_type } = useParams();
@@ -64,8 +65,8 @@ export default function AllPosts() {
   return (
     <div className="bg-white-100">
       <Navbar />
+      <HeaderPage brand={brand_type} />
 
-      <HeaderPage />
 
       {/* <div className="container mx-auto ">
         <h2 className="text-5xl flex justify-center cursive">Test12</h2>

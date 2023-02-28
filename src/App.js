@@ -15,18 +15,16 @@ import HomepageBrands from "./components/HomepageBrands";
 import HomepageColors from "./components/HomepageColors";
 import Footer from "./components/Footer";
 import { Card } from "./components/Card";
+import ColorGroupings from "./components/ColorGroupings";
 
 function App() {
   return (
     <BrowserRouter>
       <Routes>
-        {/* <div>  */}
-        {/* <Route component={AllPosts} path="/" exact />
-        <Route component={OnePost} path="/:slug" /> */}
-
         <Route element={<Homepage />} path="/" exact />
         <Route element={<AllPosts />} path="/colors/:brand_type" exact />
         <Route element={<OnePost />} path="/:slug" />
+        <Route element={<ColorGroupings />} path ="/color-groups/:color_group" />
       </Routes>
     </BrowserRouter>
   );

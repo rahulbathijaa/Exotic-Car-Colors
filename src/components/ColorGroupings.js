@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import { useParams } from "react-router-dom";
+import { UNSAFE_enhanceManualRouteObjects, useParams } from "react-router-dom";
 import sanityClient from "../client.js";
 import Card from "./Card.js";
 import Footer from "./Footer.js";
@@ -42,6 +42,8 @@ export default function ColorGroupings() {
   const backgroundImageUrl = `url(${colorGroupData.imageSrc})`;
 
 
+  console.log(colorGroupData);
+
 
   return (
     <div className="bg-white-100">
@@ -56,14 +58,22 @@ export default function ColorGroupings() {
           </div>
         </div>
       </div>
-    {/* color history  */}
-    <div className="flex justify-left items-center h-full">
-    <div className="text-left text-black px-6 md:px-12 pl-7">
-       <h2 className="text-5xl font-bold mt-0 mb-6 lg:pl-16">{"Color History"}</h2>
-       <p className="text-l mt-0 mb-6 lg:pl-16" style={{ maxWidth: "60%", wordWrap: "break-word" }}>
-          {colorGroupData.longerDescription}
-        </p>      </div>
-    </div>
+      <div className="container mx-auto pt-12">
+        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 justify-items-center">
+          {colorGroupData && colorGroupData.colors && colorGroupData.colors.map((color, index) => {
+              if (!color.slug || !color.mainImage) return null;
+              return <Card post={color} key={index} />;
+            })}
+        </div>
+      </div>
+      <div className="flex justify-left items-center h-full">
+        <div className="text-left text-black px-6 md:px-12 pl-7">
+          <h2 className="text-5xl font-bold mt-0 mb-6 lg:pl-16">{"Color History"}</h2>
+          <p className="text-l mt-0 mb-6 lg:pl-16" style={{ maxWidth: "60%", wordWrap: "break-word" }}>
+            {colorGroupData.longerDescription}
+          </p>      
+        </div>
+      </div>
     <Footer />
     </div>
   );

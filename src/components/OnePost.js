@@ -92,36 +92,7 @@ export default function OnePost() {
     }
 
     fetchData();
-    // sanityClient
-    //   .fetch(
-    //     `*[slug.current == "/${slug}/"]{
-    //        brand_type,
-    //        slug,
-    //        color_name,
-    //        short_description,
-    //        hex_text,
-    //        rgb_text,
-    //        cmyk_text,
-    //        ral_text,
-    //        long_description,
-    //        related_color_1,
-    //        related_color_2,
-    //        related_color_3,
-    //        mainImage{
-    //        asset->{
-    //           _id,
-    //           url
-    //         }
-    //       }
-    //    }`
-    //   )
-    //   .then((data) => {
-    //     console.log("ayo", data);
-    //     setPostData(data[0]);
-    //     // queries B1. b2. b3
-
-    //   })
-    //   .catch(console.error);
+   
   }, [slug]);
 
   if (!postData) return <div>Loading...</div>;
@@ -168,19 +139,7 @@ export default function OnePost() {
 
 
 
-            {/* text-6xl md:text-8xl */}
-
-            {/* <div className="bg-white p-8">
-                <div className="max-w-[1240px] mx-auto grid md:grid-cols-2 	">
-                    <img
-                    className="flex flex-col object-contain w-49 h-64  content-end	justify-self-end pr-5 md:content-start col-start-1"
-                    src={postData.mainImage.asset.url}
-                    alt="/"/>
-                    <div className="align-top	pl-5 pr-4 ">
-                        <p>{postData.long_description}</p>
-                    </div>
-                </div>
-            </div> */}
+         
 
             <div className="bg-white p-8 py-16">
   <div className="max-w-[1240px] mx-auto grid md:grid-cols-2">

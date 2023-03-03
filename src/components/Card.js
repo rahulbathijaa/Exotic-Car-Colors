@@ -3,6 +3,7 @@ import { Link } from "react-router-dom";
 import { getByTitle } from "@testing-library/react";
 
 export default function Card({ post }) {
+  console.log(post)
   return (
     <Link to={`${post.slug && post.slug.current}`} key={post.slug && post.slug.current}>
 

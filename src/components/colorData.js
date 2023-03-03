@@ -17,7 +17,7 @@ const colorData = {
           rgb: "192,0,0",
           cmyk: "0,100,100,20",
           ral: "3020",
-          imageSrc: "/images/rosso-scuderia.jpg",
+          mainImage: {asset: {url:"/img/rosso-scuderia.png"}},
         },
         {
           name: "Rosso Corsa",
@@ -26,7 +26,7 @@ const colorData = {
           rgb: "212,0,0",
           cmyk: "0,100,100,16",
           ral: "3002",
-          imageSrc: "/images/rosso-corsa.jpg",
+          mainImage: {asset: {url:"/img/rosso-corsa.png" }},
         },
         {
           name: "Rosso Mugello",
@@ -35,23 +35,23 @@ const colorData = {
           rgb: "158,11,15",
           cmyk: "0,100,100,38",
           ral: "",
-          imageSrc: "/images/rosso-mugello.jpg",
+          mainImage: {asset: {url:"/img/rosso-mugello.png"} },
         },
       ],
 
     },
-    "color-group-2": {
-      title: "Color Group 2",
-      subtitle: "View all Brand Type A colors in the Color Group 2 group",
-      paragraphText:
-        "Here you can find all of the available colors in the Color Group 2 group. Click on a color to learn more about it.",
-      imageSrc: "img/brand_type_a_color_group_2.jpg",
-      colors: {
-        "red": "Red",
-        "orange": "Orange",
-        "yellow": "Yellow",
-      }
-    },
+    // "color-group-2": {
+    //   title: "Color Group 2",
+    //   subtitle: "View all Brand Type A colors in the Color Group 2 group",
+    //   paragraphText:
+    //     "Here you can find all of the available colors in the Color Group 2 group. Click on a color to learn more about it.",
+    //   imageSrc: "img/brand_type_a_color_group_2.jpg",
+    //   colors: {
+    //     "Rosso Corsa": "rosso_corsa",
+    //     "Rosso ": "Orange",
+    //     "yellow": "Yellow",
+    //   }
+    // },
     // ...
   };
   

@@ -11,13 +11,14 @@ const colorData = {
 
 
         {
-          name: "Rosso Scuderia",
-          slug: "rosso-scuderia",
-          hex: "#c00000",
-          rgb: "192,0,0",
-          cmyk: "0,100,100,20",
-          ral: "3020",
-          mainImage: {asset: {url:"/img/rosso-scuderia.png"}},
+        color_name: "Rosso Scuderia",
+        short_description: "short description",
+          slug: "/rosso-scuderia/",
+          hex_text: "#c00000",
+          rgb_text: "192,0,0",
+          cmyk_text: "0,100,100,20",
+          ral_text: "3020",
+          mainImage: {asset: {url:"https://cdn.sanity.io/images/zlmf9sgs/production/6c06d259c57011e03a7497b44f0607d39cd492fa-750x500.png"}},
         },
         {
           name: "Rosso Corsa",
@@ -26,7 +27,7 @@ const colorData = {
           rgb: "212,0,0",
           cmyk: "0,100,100,16",
           ral: "3002",
-          mainImage: {asset: {url:"/img/rosso-corsa.png" }},
+          mainImage: {asset: {url:"https://cdn.sanity.io/images/zlmf9sgs/production/2d97dc42e78699af41ddcecf74369af5d2d38351-750x500.png" }},
         },
         {
           name: "Rosso Mugello",
@@ -35,7 +36,7 @@ const colorData = {
           rgb: "158,11,15",
           cmyk: "0,100,100,38",
           ral: "",
-          mainImage: {asset: {url:"/img/rosso-mugello.png"} },
+          mainImage: {asset: {url:"https://cdn.sanity.io/images/zlmf9sgs/production/912cb7adb4d4afad6d507c6102a71258488659a1-750x500.png"} },
         },
       ],
 

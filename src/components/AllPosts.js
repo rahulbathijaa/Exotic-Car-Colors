@@ -1,23 +1,3 @@
-// import React, { useEffect, useState } from "react";
-// import sanityClient from "../client.js";
-// // import { Link } from "react-router-dom";
-// // import { getByTitle } from "@testing-library/react";
-
-// export default function AllColors() {
-//     const [allColorsData, setAllColors] = useState(null);
-
-//     useEffect(() => {
-//             sanityClient.fetch(
-//                 '*[_type == "colorsdata"]{
-
-//                 }'
-//             )
-
-//     })
-
-//     return <h2>All Posts Page </h2>;
-// }
-
 import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import sanityClient from "../client.js";

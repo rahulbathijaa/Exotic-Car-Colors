@@ -23,8 +23,8 @@ function App() {
       <Routes>
         <Route element={<Homepage />} path="/" exact />
         <Route element={<AllPosts />} path="/colors/:brand_type" exact />
-        <Route element={<OnePost />} path="/:slug" />
         <Route element={<ColorGroupings />} path ="/color-groups/:color_group" />
+        <Route element={<OnePost />} path="/:slug" />
       </Routes>
     </BrowserRouter>
   );

@@ -44,8 +44,11 @@
 //   );
 // }
 
+
 import React, { useEffect, useState, useRef } from "react";
 import { Link } from "react-router-dom";
+import colorData from "./colorData";
+import ColorGroupings from "./ColorGroupings";
 
 export default function Card({ post }) {
   const [isVisible, setIsVisible] = useState(false);
@@ -68,11 +71,14 @@ export default function Card({ post }) {
     };
   }, []);
 
+  console.log(post)
+
   return (
     <Link
-      to={`${post.slug && post.slug.current}`}
+      to={`${post.slug || post.slug.current}`}
       key={post.slug && post.slug.current}
     >
+
       <div
         ref={cardRef}
         className={`max-w-sm rounded overflow-hidden shadow-lg border-black ${
@@ -105,3 +111,6 @@ export default function Card({ post }) {
     </Link>
   );
 }
+
+
+

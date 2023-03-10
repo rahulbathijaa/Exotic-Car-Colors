@@ -94,7 +94,7 @@ const HomepageColors = () => {
       color: "#FED136",
     },
     {
-      link: "/mclaren-orange/",
+      link: `${window.location.origin}/mclaren-orange/`,
       name: "McLaren Orange",
       color: "#FFC43D",
     },

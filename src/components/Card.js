@@ -75,7 +75,7 @@ export default function Card({ post }) {
 
   return (
     <Link
-      to={`${post.slug || post.slug.current}`}
+      to={`${ post.slug.current || post.slug}`}
       key={post.slug && post.slug.current}
     >
 

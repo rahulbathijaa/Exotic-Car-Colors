@@ -151,8 +151,8 @@ export default function ColorGroupings() {
 
   return (
     <div className="bg-white-100">
-      <Navbar />
-      <div className={`bg-${colorGroupData.color}-500`}>
+      {/* <Navbar />
+      <div className={`bg-${colorGroupData.color}-1000`}>
         <div className="flex justify-left items-center h-full">
           <div className="text-left text-black px-6 md:px-12 pl-7">
             <h1 className="text-5xl font-bold mt-0 mb-6 lg:pl-16">{colorGroupData.title}</h1>
@@ -161,7 +161,22 @@ export default function ColorGroupings() {
               {colorGroupData.paragraphText}</p>
           </div>
         </div>
-      </div>
+      </div> */}
+
+<Navbar />
+<div className={`bg-${colorGroupData.color}-300 max-w-[1240px] mx-auto  pt-6`}>
+  <div className="flex justify-left pt-10 pb-12">
+    <div className="text-left text-black px-6 md:px-12 pl-7">
+      <h1 className="text-4xl md:text-5xl font-bold mt-0 mb-6 lg:pl-16">{colorGroupData.title}</h1>
+      <h2 className="text-2xl md:text-3xl font-bold mb-8 lg:pl-16">{colorGroupData.subtitle}</h2>
+      <p className="text-base md:text-lg mb-8 lg:pl-16" style={{ maxWidth: "90%", wordWrap: "break-word" }}>
+        {colorGroupData.paragraphText}
+      </p>
+     
+    </div>
+  </div>
+</div>
+
       
       <div className="container mx-auto pt-12">
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 justify-items-center">
@@ -178,7 +193,7 @@ export default function ColorGroupings() {
         </div>
       </div>
       <div className="flex justify-left items-center h-full">
-        <div className="text-left text-black px-6 md:px-12 pl-7">
+        <div className="text-left text-black pt-16 px-6 md:px-12 pl-7">
           <h2 className="text-5xl font-bold mt-0 mb-6 lg:pl-16">{"Color History"}</h2>
           <p className="text-l mt-0 mb-6 lg:pl-16" style={{ maxWidth: "60%", wordWrap: "break-word" }}>
             {colorGroupData.longerDescription}

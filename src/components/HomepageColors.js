@@ -85,18 +85,17 @@ const HomepageColors = () => {
 
   const colors = [
     {
-      link: `${baseURL}/color-groups/lamborghini-green/`,
-      // link: "/color-groups/lamborghini-green/",
+      link: "https://zesty-piroshki-2e399d.netlify.app/color-groups/lamborghini-green/",
       name: "Lamborghini Green",
       color: "#AEFF7E",
     },
     {
-      link: `${baseURL}/giallo-orion/`,
+      link:  "https://zesty-piroshki-2e399d.netlify.app/giallo-orion/",
       name: "Giallo Orion",
       color: "#FED136",
     },
     {
-      link: `${baseURL}/mclaren-orange/`,
+      link: "https://zesty-piroshki-2e399d.netlify.app/mclaren-orange/",
       name: "McLaren Orange",
       color: "#FFC43D",
     },

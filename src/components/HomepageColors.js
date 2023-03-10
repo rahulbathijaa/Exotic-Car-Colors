@@ -84,84 +84,84 @@ const HomepageColors = () => {
   
   const colors = [
     {
-      link: "/color-groups/lamborghini-green",
+      link: "/color-groups/lamborghini-green/",
       name: "Lamborghini Green",
       color: "#AEFF7E",
     },
     {
-      link: "/giallo-orion",
+      link: "/giallo-orion/",
       name: "Giallo Orion",
       color: "#FED136",
     },
     {
-      link: "/mclaren-orange",
+      link: "/mclaren-orange/",
       name: "McLaren Orange",
       color: "#FFC43D",
     },
     {
-      link: "/pastel-blue",
+      link: "/pastel-blue/",
       name: "Pastel Blue",
       color: "#A0D8FB",
     },
     {
-      link: "/azure-blue",
+      link: "/azure-blue/",
       name: "Azure Blue",
       color: "#3C566F",
     },
     {
-      link: "/blu-abu-dhabi",
+      link: "/blu-abu-dhabi/",
       name: "Blu Abu Dhabi",
       color: "#2885B5",
     },
     {
-      link: "/color-groups/ferrari-blue",
+      link: "/color-groups/ferrari-blue/",
       name: "Ferrari Blue",
       color: "#163166",
     },
     {
-      link: "/color-groups/lamborghini-blue",
+      link: "/color-groups/lamborghini-blue/",
       name: "Lamborghini Blue",
       color: "#00024C",
     },
     {
-      link: "/rosso-fuoco",
+      link: "/rosso-fuoco/",
       name: "Rosso Fuoco",
       color: "#D13442",
     },
     {
-      link: "/rosso-corsa",
+      link: "/rosso-corsa/",
       name: "Rosso Corsa",
       color: "#D40000",
     },
     {
-      link: "/color-groups/ferrari-red",
+      link: "/color-groups/ferrari-red/",
       name: "Ferrari Red",
       color: "#7A212A",
     },
     {
-      link: "/color-groups/lamborghini-grey",
+      link: "/color-groups/lamborghini-grey/",
       name: "Lamborghini Grey",
       color: "#C7D7E7",
     },
     {
-      link: "/grigio-telesto",
+      link: "/grigio-telesto/",
       name: "Grigio Telesto",
       color: "#7692A5",
     },
    
     {
-      link: "/nardo-grey",
+      link: "/nardo-grey/",
       name: "Nardo Grey",
       color: "#C0C6C8",
     },
     {
-      link: "/chalk",
+      link: "/chalk/",
       name: "Chalk",
       color: "#A5A4AC",
     },
     
     {
-      link: "/color-groups/lamborghini-black",
+      link: "/color-groups/lamborghini-black/",
       name: "Lamborghini Black",
       color: "#080D10",
     },

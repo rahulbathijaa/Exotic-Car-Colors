@@ -84,12 +84,13 @@ const HomepageColors = () => {
   
   const colors = [
     {
-      link: "/color-groups/lamborghini-green/",
+      link: `${window.location.origin}/color-groups/lamborghini-green/`,
+      // link: "/color-groups/lamborghini-green/",
       name: "Lamborghini Green",
       color: "#AEFF7E",
     },
     {
-      link: "/giallo-orion/",
+      link: `${window.location.origin}/giallo-orion/`,
       name: "Giallo Orion",
       color: "#FED136",
     },

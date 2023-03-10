@@ -25,7 +25,7 @@ const HomepageBrands = () => {
     },
     {
       id: 2,
-      title: "Lamborghiniiiiiii",
+      title: "Lamborghini",
       imgSrc: Img2,
       link: "/colors/Lamborghini",
     },

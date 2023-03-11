@@ -81,8 +81,6 @@ const HomepageColors = () => {
 
   }
 
-  const baseURL = "https://zesty-piroshki-2e399d.netlify.app";
-
   const colors = [
     {
       link: "https://zesty-piroshki-2e399d.netlify.app/color-groups/lamborghini-green/",

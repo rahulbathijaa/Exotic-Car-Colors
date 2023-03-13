@@ -14,10 +14,10 @@ function Footer(props) {
       <div className="footer-links ">
         <div className="footer-link-wrapper">
           <div className="footer-link-items">
-            <Link to="/#colors">Colors</Link>
+            <Link to="/rosso-fuoco/">Colors</Link>
           </div>
           <div className="footer-link-items">
-            <Link to="/#brands">Brands</Link>
+            <Link to="/colors/Lamborghini">Brands</Link>
           </div>
           <div className="footer-link-items">
             <Link to="https://twitter.com/rahulbathijaa">Contact</Link>

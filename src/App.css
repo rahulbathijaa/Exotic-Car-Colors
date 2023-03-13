@@ -84,6 +84,13 @@
   user-select: none;
 }
 
+@media screen and (max-width: 768px) {
+  .right-arrow,
+  .left-arrow {
+  display: none;
+  }
+  }
+
 .slide {
   opacity: 0;
   transition-duration: 1s ease;

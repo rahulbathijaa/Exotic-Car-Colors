@@ -46,14 +46,6 @@ export default function AllPosts() {
     <div className="bg-white-100">
       <Navbar />
       <HeaderPage brand={brand_type} />
-
-
-      {/* <div className="container mx-auto ">
-        <h2 className="text-5xl flex justify-center cursive">Test12</h2>
-        <h3 className="text-lg text-gray-600 flex justify-center mb-12">
-          Test123!
-        </h3>
-      </div> */}
       <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 justify-items-center pt-24">
         {allPostsData &&
           allPostsData.map((post, index) => {

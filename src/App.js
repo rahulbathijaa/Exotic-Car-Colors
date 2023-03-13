@@ -30,21 +30,6 @@ function App() {
   );
 }
 
-// {/*
-//     // <>
-//     //   <Router>
-//     //     <Navbar />
-//     //     <ImageSlider slides={SliderData} />
-//     //     <HeroSection />
-//     //     <HomepageBrands />
-//     //     <HomepageColors />
-//     //     <Footer />
-//     //     /* <Routes>
-//     //       <Route path='/' exact component={Home} />
-//     //     </Routes> */
-//     //   </Router>
-//     // </>
-//   );
-// } */}
+
 
 export default App;

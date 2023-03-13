@@ -10,28 +10,6 @@ function Footer(props) {
 
  
   return (
-    // <div className="footer-container" style={{ backgroundColor: hex_text }}>
-    //   <section className="footer-subscription" >
-    //     <p className="footer-subscription-heading">Sign up for updates</p>
-    //     <p className="footer-subscription-text">
-    //       We'll occassionally send an email if we add new colors so you can
-    //       check them out.
-    //     </p>
-    //     <div className="input-areas">
-    //       <form>
-    //         <input
-    //           type="email"
-    //           name="email"
-    //           placeholder="Your Email"
-    //           className="footer-input"
-    //         />
-    //         {/* button style  */}
-    //       </form>
-    //     </div>
-
-
-    //   </section>
-
 
       <div className="footer-links ">
         <div className="footer-link-wrapper">

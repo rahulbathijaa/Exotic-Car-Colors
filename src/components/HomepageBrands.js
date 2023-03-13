@@ -2,6 +2,7 @@ import React from "react";
 import "./HomepageBrands.css";
 import { Link } from "react-router-dom";
 
+
 import AllPosts from "./AllPosts";
 // import Img1 from '../img/ferrari-car.gif'
 // import Img2 from '../img/lamborghini-car.gif'
@@ -80,27 +81,7 @@ const HomepageBrands = () => {
     );
   };
     
-//  <div className="container mx-auto pt-10 pb-50">
-//         <h2 className="text-5xl flex justify-left pl-5">Colors</h2>
-//         <h3 className="text-lg text-gray-600 flex justify-left mb-12 pl-5">
-//           Search through specific colors
-//         </h3>
-//       </div>
-    
-//     <div className="homepageBrands">
-      
-//       {data.map((item, index) => {
-//         return (
-//           <Link to={item.link}>
-//             <div className="pics" key={index}>
-//               <img src={item.imgSrc} style={{ width: "100%" , borderRadius: "5px"}} className="gif" />
-//             </div>
-//           </Link>
-//         );
-//       })}
-//     </div>
-//   );
-// };
+
 
 export default HomepageBrands;
 

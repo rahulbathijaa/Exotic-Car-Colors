@@ -210,7 +210,7 @@ const colorData = {
                 rgb_text: "rgb(49,47,48)",
                 cmyk_text: "0, 4, 2, 81",
                 ral_text: "RAL 9004",
-                mainImage: {asset: {url:"https://cdn.sanity.io/images/zlmf9sgs/production/336fc4de472b2ef7cbe638765daa71465fddac8e-750x500.png"} },
+                mainImage: {asset: {url:"https://cdn.sanity.io/images/zlmf9sgs/production/7c991670eb34e0f89bba0e27e24e2cd666b1a1c1-750x500.png"} },
               },
         ],
   

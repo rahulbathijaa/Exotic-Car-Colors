@@ -23,7 +23,7 @@ function Navbar(props) {
           <ul className={click ? "nav-menu active" : "nav-menu"}>
             <li className="nav-item">
               <Link
-                to="/#colors"
+                to="/rosso-fuoco/"
                 className="nav-links" 
                 onClick={closeMobileMenu}
                 style={{ color: textColor }}
@@ -33,7 +33,7 @@ function Navbar(props) {
             </li>
             <li className="nav-item">
               <Link
-                to="/#brands"
+                to="/colors/Lamborghini"
                 className="nav-links"
                 onClick={closeMobileMenu}
                 style={{ color: textColor }}

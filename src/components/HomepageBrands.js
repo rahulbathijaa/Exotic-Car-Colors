@@ -10,11 +10,11 @@ import AllPosts from "./AllPosts";
 // import Img4 from '../img/mclaren-car.gif'
 // import Img5 from '../img/audi-car.gif'
 
-import Img1 from "../img/ferrari-brands-photo.png";
-import Img2 from "../img/lamborghini-brands-photo.png";
-import Img3 from "../img/porsche-brands-photo.png";
-import Img4 from "../img/mclaren-resized-photo.png";
-import Img5 from "../img/grey-audi-resized.png";
+import Img1 from "../img/ferrari-brands-photo.webp";
+import Img2 from "../img/lamborghini-brands-photo.webp";
+import Img3 from "../img/porsche-brands-photo.webp";
+import Img4 from "../img/mclaren-resized-photo.webp";
+import Img5 from "../img/grey-audi-resized.webp";
 
 const HomepageBrands = () => {
   let data = [
@@ -54,7 +54,7 @@ const HomepageBrands = () => {
     // <h1>Brands</h1>
 
 
-      <div>
+      <div id="brands">
         <div className="container mx-auto pt-10 pb-50">
           <h2 className="text-5xl flex justify-left pl-5">Brands</h2>
           <h3 className="text-lg text-gray-600 flex justify-left mb-12 pl-5">

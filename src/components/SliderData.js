@@ -35,9 +35,9 @@
 
 // export default SliderData;
 
-import image1 from "../img/ferrari-cover-photo-1.png";
-import image2 from '../img/mclaren-cover-photo-1.png';
-import image3 from "../img/porsche-cover-photo-2.png";
+import image1 from "../img/ferrari-cover-photo-1.webp";
+import image2 from '../img/mclaren-cover-photo-1.webp';
+import image3 from "../img/porsche-cover-photo-2.webp";
 
 export const SliderData = [
   {

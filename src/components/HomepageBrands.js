@@ -10,11 +10,11 @@ import AllPosts from "./AllPosts";
 // import Img4 from '../img/mclaren-car.gif'
 // import Img5 from '../img/audi-car.gif'
 
-import Img1 from "../img/ferrari-brands-photo.webp";
-import Img2 from "../img/lamborghini-brands-photo.webp";
-import Img3 from "../img/porsche-brands-photo.webp";
-import Img4 from "../img/mclaren-resized-photo.webp";
-import Img5 from "../img/grey-audi-resized.webp";
+import Img1 from "../img/ferrari-brands-photo (1).webp";
+import Img2 from "../img/lamborghini-brands-photo (1).webp";
+import Img3 from "../img/porsche-brands-photo (1).webp";
+import Img4 from "../img/mclaren-resized-photo (1).webp";
+import Img5 from "../img/grey-audi-resized (1).webp";
 
 const HomepageBrands = () => {
   let data = [

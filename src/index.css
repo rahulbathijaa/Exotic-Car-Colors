@@ -7,10 +7,10 @@
 @import url("https://unpkg.com/@tailwindcss/typography@0.2.x/dist/typography.min.css");
 @import url("https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css");
 
-.cursive {
+/* .cursive {
   font-family: "Amatic SC", cursive;
   font-weight: 700;
-}
+} */
 
 .prose img {
   margin-left: auto;

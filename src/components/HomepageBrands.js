@@ -70,7 +70,7 @@ const HomepageBrands = () => {
                   <img
                     src={item.imgSrc}
                     // style={{ width: "100%", borderRadius: "5px" }}
-                    className="gif"
+                    // className="gif"
                   />
                 </div>
               </Link>

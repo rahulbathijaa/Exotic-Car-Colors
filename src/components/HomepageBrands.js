@@ -69,7 +69,7 @@ const HomepageBrands = () => {
                 <div className="pics" key={index} data-title={item.title}> 
                   <img
                     src={item.imgSrc}
-                    style={{ width: "100%", borderRadius: "5px" }}
+                    // style={{ width: "100%", borderRadius: "5px" }}
                     className="gif"
                   />
                 </div>

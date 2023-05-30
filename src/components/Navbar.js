@@ -1,5 +1,3 @@
-
-
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import "./Navbar.css";
@@ -23,22 +21,52 @@ function Navbar(props) {
           <ul className={click ? "nav-menu active" : "nav-menu"}>
             <li className="nav-item">
               <Link
-                to="/rosso-fuoco/"
+                to="/colors/Ferrari"
                 className="nav-links" 
                 onClick={closeMobileMenu}
                 style={{ color: textColor }}
               >
-                Colors
+                Ferrari
               </Link>
             </li>
             <li className="nav-item">
               <Link
                 to="/colors/Lamborghini"
+                className="nav-links" 
+                onClick={closeMobileMenu}
+                style={{ color: textColor }}
+              >
+                Lamborghini
+              </Link>
+            </li>
+            <li className="nav-item">
+              <Link
+                to="/colors/Porsche"
                 className="nav-links"
                 onClick={closeMobileMenu}
                 style={{ color: textColor }}
               >
-                Brands
+                Porsche
+              </Link>
+            </li>
+            <li className="nav-item">
+              <Link
+                to="/colors/Porsche"
+                className="nav-links"
+                onClick={closeMobileMenu}
+                style={{ color: textColor }}
+              >
+                McLaren
+              </Link>
+            </li>
+            <li className="nav-item">
+              <Link
+                to="/colors/Audi"
+                className="nav-links"
+                onClick={closeMobileMenu}
+                style={{ color: textColor }}
+              >
+                Audi
               </Link>
             </li>
             <li className="nav-item">
@@ -61,3 +89,4 @@ function Navbar(props) {
 }
 
 export default Navbar;
+

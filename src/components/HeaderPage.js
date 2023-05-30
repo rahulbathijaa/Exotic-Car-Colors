@@ -1,11 +1,11 @@
 
 
 import React from "react";
-import audiHeader from "../img/audi-header.png";
-import ferrariHeader from "../img/ferrari-header.png";
-import lamborghiniHeader from "../img/lamborghini-header.png";
-import mclarenHeader from "../img/mclaren-header.png";
-import porscheHeader from "../img/porsche-header.png";
+import audiHeader from "../img/audi-header.webp";
+import ferrariHeader from "../img/ferrari-header.webp";
+import lamborghiniHeader from "../img/lamborghini-header.webp";
+import mclarenHeader from "../img/mclaren-header.webp";
+import porscheHeader from "../img/porsche-header.webp";
 
 export default function HeaderPage(props) {
   let backgroundImageUrl;

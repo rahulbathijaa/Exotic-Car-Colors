@@ -51,7 +51,7 @@ function Navbar(props) {
             </li>
             <li className="nav-item">
               <Link
-                to="/colors/Porsche"
+                to="/colors/McLaren"
                 className="nav-links"
                 onClick={closeMobileMenu}
                 style={{ color: textColor }}
@@ -69,18 +69,7 @@ function Navbar(props) {
                 Audi
               </Link>
             </li>
-            <li className="nav-item">
-              <a
-                href="https://twitter.com/rahulbathijaa"
-                className="nav-links"
-                onClick={closeMobileMenu}
-                style={{ color: textColor }}
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                Contact
-              </a>
-            </li>
+           
           </ul>
         </div>
       </nav>

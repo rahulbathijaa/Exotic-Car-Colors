@@ -36,9 +36,11 @@ export default function OnePost() {
   useEffect(() => {
     console.log("useEffect");
     async function fetchData() {
-      console.log("asfdsadf");
+      console.log("car-color/"+slug);
       const data = await sanityClient.fetch(
-        `*[slug.current == "/${slug}/"]{
+        // `*[brand_type == "${brand_type}"]{
+        // `*[slug.current == "${slug}"]{
+          `*[slug.current == "car-color/${slug}"]{
            brand_type,
            slug,
            color_name,
@@ -60,11 +62,14 @@ export default function OnePost() {
        }`
       );
 
-      console.log("ayo", data[0]);
+      console.log("ayo", data);
+      console.log("Data:", data);
       setPostData(data[0]);
       // queries B1. b2. b3
+
       const relatedPosts =
-        await sanityClient.fetch(`*[color_name == "${data[0].related_color_1}"
+        await sanityClient.fetch(
+          `*[color_name == "${data[0].related_color_1}"
     || color_name == "${data[0].related_color_2}"
            || color_name == "${data[0].related_color_3}"]{
         brand_type,
@@ -82,6 +87,8 @@ export default function OnePost() {
          }
        }
        }`);
+  
+
 
       console.log("bruh", relatedPosts);
       setRelated(relatedPosts);
@@ -94,6 +101,9 @@ export default function OnePost() {
     fetchData();
    
   }, [slug]);
+
+  
+  
 
   if (!postData) return <div>Loading...</div>;
   const textColor = getContrastColor(postData.hex_text);

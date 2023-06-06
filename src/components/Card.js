@@ -31,7 +31,7 @@ export default function Card({ post }) {
 
   return (
     <Link
-      to={`${ post.slug.current || post.slug}`}
+      to={`/car-color${post.slug.current}`}
       key={post.slug && post.slug.current}
     >
 

@@ -32,15 +32,18 @@ export default function OnePost() {
   const [postData, setPostData] = useState(null);
   const [related, setRelated] = useState([]);
   const { slug } = useParams();
+  
+  console.log(slug);
 
   useEffect(() => {
     console.log("useEffect");
     async function fetchData() {
-      console.log("car-color/"+slug);
+	  console.log("slug param "+ slug)
+	  var slugName = "/" + slug + "/";
+	  console.log(slugName);
+
       const data = await sanityClient.fetch(
-        // `*[brand_type == "${brand_type}"]{
-        // `*[slug.current == "${slug}"]{
-          `*[slug.current == "car-color/${slug}"]{
+          `*[slug.current == "${slugName}"]{
            brand_type,
            slug,
            color_name,
@@ -62,7 +65,6 @@ export default function OnePost() {
        }`
       );
 
-      console.log("ayo", data);
       console.log("Data:", data);
       setPostData(data[0]);
       // queries B1. b2. b3

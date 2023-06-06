@@ -98,23 +98,19 @@ export default function AllPosts() {
       .catch(console.error);
   }, []);
 
-  console.log({ allPostsData });
 
   return (
     <div className="bg-white-100">
       <Navbar />
       <HeaderPage brand={brand_type} />
       <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 justify-items-center pt-24">
-        {/* {allPostsData &&
-          allPostsData.map((post, index) => {
-            if (!post.slug || !post.mainImage) return null;
-            return <Card key={post.slug} post={post} />;
-          })} */}
+        
           {allPostsData &&
   allPostsData.map((post, index) => {
+	  console.log(`/car-color${post.slug.current}`)
     if (!post.slug || !post.mainImage) return null;
     return (
-      <Link to={`/car-color/${post.slug.current}`} key={post.slug.current}>
+      <Link>
         <Card post={post} />
       </Link>
     );

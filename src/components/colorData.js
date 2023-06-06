@@ -11,7 +11,7 @@ const colorData = {
         {
             color_name: "Rosso Scuderia",
         short_description: "Ferrari's bright red color.",
-         slug: "/rosso-scuderia/",
+         slug: "/car-color/rosso-scuderia/",
           hex_text: "#ff2800",
           rgb_text: "rgb(255,40,0)",
           cmyk_text: "0, 84, 100, 0",

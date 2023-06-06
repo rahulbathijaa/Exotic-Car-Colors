@@ -145,6 +145,7 @@ export default function ColorGroupings() {
 
   console.log(colorGroupData);
 
+ 
 
 
 
@@ -171,13 +172,22 @@ export default function ColorGroupings() {
       <div className="container mx-auto pt-12">
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 justify-items-center">
     
-             {colorGroupData.colors
-                  .filter((color) => color.mainImage)
-                  .map((color, index) => (
-                    <Card post={color} key={index} slug={color.slug}/>
-                  ))}
-      
-        </div>
+        {/* {colorGroupData.colors
+            .filter((color) => color.mainImage)
+            .map((color, index) => (
+            <Card post={color} key={index} slug={color.slug}/>
+       ))} */}
+   {colorGroupData.colors
+  .filter((color) => color.mainImage)
+  .map((color, index) => (
+    <Card post={color} key={index} slug={color.slug} />
+))}
+
+
+
+
+    
+      </div>
       </div>
       <div className="flex justify-left items-center h-full">
         <div className="text-left text-black pt-16 px-6 md:px-12 pl-7">

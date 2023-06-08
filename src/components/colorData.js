@@ -21,7 +21,7 @@ const colorData = {
         {
           color_name: "Rosso Corsa",
          short_description: "Ferrari's classic red color.",
-         slug: "/rosso-scuderia/",
+         slug: "/car-color/rosso-scuderia/",
           hex_text: "#D40000",
           rgb_text: "rgb(212,0,0)",
           cmyk_text: "0, 100, 100, 17",
@@ -31,7 +31,7 @@ const colorData = {
         {
           color_name: "Rosso Mugello",
           short_description: "Ferrari's dark red color.",
-          slug: "/rosso-mugello/",
+          slug: "/car-color/rosso-mugello/",
           hex_text: "#7A212A",
           rgb_text: "rgb(122,33,42)",
           cmyk_text: "0, 73, 66, 52",
@@ -41,7 +41,7 @@ const colorData = {
         {
             color_name: "Rosso Fuoco",
             short_description: "Ferrari's triple layer red color.",
-            slug: "/rosso-fuoco/",
+            slug: "/car-color/rosso-fuoco/",
             hex_text: "#D13442",
             rgb_text: "rgb(209,52,66)",
             cmyk_text: "0, 75, 68, 18",
@@ -51,7 +51,7 @@ const colorData = {
           {
             color_name: "Rosso Dino",
             short_description: "Ferrari's red/orange color.",
-            slug: "/rosso-dino/",
+            slug: "/car-color/rosso-dino/",
             hex_text: "#FC652E",
             rgb_text: "rgb(252,101,46)",
             cmyk_text: "0, 60, 82, 1",
@@ -61,7 +61,7 @@ const colorData = {
           {
             color_name: "Rosso Fiorano",
             short_description: "Ferrari's ruby red color.",
-            slug: "/rosso-fiorano/",
+            slug: "/car-color/rosso-fiorano/",
             hex_text: "#5D0001",
             rgb_text: "rgb(93,0,1)",
             cmyk_text: "0, 100, 99, 64",
@@ -71,7 +71,7 @@ const colorData = {
           {
             color_name: "Rosso 70 Anni",
             short_description: "Ferrari's 70th anniversary celebration color.",
-            slug: "/rosso-70-anni/",
+            slug: "/car-color/rosso-70-anni/",
             hex_text: "#C40C19",
             rgb_text: "rgb(196,12,25)",
             cmyk_text: "0, 94, 87, 23",

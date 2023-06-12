@@ -1,5 +1,3 @@
-
-
 import React, { useEffect, useState, useRef } from "react";
 import { Link } from "react-router-dom";
 import LazyLoad from 'react-lazyload';
@@ -31,7 +29,8 @@ export default function Card({ post }) {
 
   return (
     <Link
-      to={`/car-color${post.slug.current}`}
+      // to={`/car-color${post.slug.current || post.slug}`}
+      to={post.slug.current ? `/car-color${post.slug.current}` : post.slug}
       key={post.slug && post.slug.current}
     >
 

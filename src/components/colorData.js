@@ -21,7 +21,7 @@ const colorData = {
         {
           color_name: "Rosso Corsa",
          short_description: "Ferrari's classic red color.",
-         slug: "/car-color/rosso-scuderia/",
+         slug: "/car-color/rosso-corsa/",
           hex_text: "#D40000",
           rgb_text: "rgb(212,0,0)",
           cmyk_text: "0, 100, 100, 17",

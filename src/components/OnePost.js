@@ -10,6 +10,7 @@ import Footer from "./Footer.js";
 import Navbar from "./Navbar.js";
 
 
+
 function getContrastColor(hexColor) {
   // Convert hex color to RGB
   const red = parseInt(hexColor.substr(1, 2), 16);
@@ -170,7 +171,7 @@ export default function OnePost() {
               
                 {related.map((post) => (
                 // <Card post={post} />
-                <Card post={post} slug={post.slug} key={post.slug} />
+                <Card post={post} hexText={postData.hex_text} slug={post.slug} key={post.slug} />
                 ))}
             </div>
         </div> 

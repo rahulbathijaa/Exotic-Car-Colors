@@ -1,6 +1,8 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import "./Navbar.css";
+import { MdClose, MdMenu } from 'react-icons/md';
+
 
 function Navbar(props) {
   const [click, setClick] = useState(false);
@@ -16,8 +18,9 @@ function Navbar(props) {
             ExoticCarColors
           </Link>
           <div className="menu-icon" onClick={handleClick}>
-            <i className={click ? "fas fa-times" : "fas fa-bars"} />
-          </div>
+            {/* <i className={click ? "fas fa-times" : "fas fa-bars"} /> */}
+            {click ? <MdClose style={{ color: textColor }} /> : <MdMenu style={{ color: textColor }} />}
+          </div> 
           <ul className={click ? "nav-menu active" : "nav-menu"}>
             <li className="nav-item">
               <Link

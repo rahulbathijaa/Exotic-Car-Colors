@@ -83,7 +83,7 @@ const HomepageColors = () => {
 
   const colors = [
     {
-      link: "/color-groups/lamborghini-green/",
+      link: "/colour-groups/lamborghini-green/",
       name: "Lamborghini Green",
       color: "#AEFF7E",
     },
@@ -113,12 +113,12 @@ const HomepageColors = () => {
       color: "#2885B5",
     },
     {
-      link: "/color-groups/ferrari-blue/",
+      link: "/colour-groups/ferrari-blue/",
       name: "Ferrari Blue",
       color: "#163166",
     },
     {
-      link: "/color-groups/lamborghini-blue/",
+      link: "/colour-groups/lamborghini-blue/",
       name: "Lamborghini Blue",
       color: "#00024C",
     },
@@ -133,12 +133,12 @@ const HomepageColors = () => {
       color: "#D40000",
     },
     {
-      link: "/color-groups/ferrari-red/",
+      link: "/colour-groups/ferrari-red/",
       name: "Ferrari Red",
       color: "#7A212A",
     },
     {
-      link: "/color-groups/lamborghini-grey/",
+      link: "/colour-groups/lamborghini-grey/",
       name: "Lamborghini Grey",
       color: "#C7D7E7",
     },
@@ -160,7 +160,7 @@ const HomepageColors = () => {
     },
     
     {
-      link: "/color-groups/lamborghini-black/",
+      link: "/colour-groups/lamborghini-black/",
       name: "Lamborghini Black",
       color: "#080D10",
     },

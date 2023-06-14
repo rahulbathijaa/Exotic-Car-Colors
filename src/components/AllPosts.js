@@ -30,8 +30,7 @@ export default function AllPosts() {
           url
         }
        }
-      
-        }`
+     }`
       )
       .then((data) => {
         setAllPosts(data);
@@ -47,11 +46,16 @@ export default function AllPosts() {
       <Navbar />
       <HeaderPage brand={brand_type} />
       <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 justify-items-center pt-24">
-        {allPostsData &&
+        {/* {allPostsData &&
           allPostsData.map((post, index) => {
             
             if (!post.slug || !post.mainImage) return null;
             return <Card post={post} />;
+          })} */}
+           {allPostsData &&
+          allPostsData.map((post, index) => {
+            if (!post.slug || !post.mainImage) return null;
+            return <Card post={post} isAllPostsPage={true} />;
           })}
       </div>
       <Footer />

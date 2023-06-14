@@ -17,31 +17,31 @@ const HomepageBrands = () => {
       id: 1,
       title: "Ferrari",
       imgSrc: Img1,
-      link: "/colors/Ferrari",
+      link: "/car-companies/Ferrari",
     },
     {
       id: 2,
       title: "Lamborghini",
       imgSrc: Img2,
-      link: "/colors/Lamborghini",
+      link: "/car-companies/Lamborghini",
     },
     {
       id: 3,
       title: "Porsche",
       imgSrc: Img3,
-      link: "/colors/Porsche",
+      link: "/car-companies/Porsche",
     },
     {
       id: 4,
       title: "McLaren",
       imgSrc: Img4,
-      link: "/colors/McLaren",
+      link: "/car-companies/McLaren",
     },
     {
       id: 5,
       title: "Audi",
       imgSrc: Img5,
-      link: "/colors/Audi",
+      link: "/car-companies/Audi",
     },
   ];
 

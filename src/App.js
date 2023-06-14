@@ -14,8 +14,8 @@ function App() {
     <BrowserRouter>
       <Routes>
         <Route element={<Homepage />} path="/" exact />
-        <Route element={<AllPosts />} path="/colors/:brand_type" exact />
-        <Route element={<ColorGroupings />} path ="/color-groups/:color_group" />
+        <Route element={<AllPosts />} path="/car-companies/:brand_type" exact />
+        <Route element={<ColorGroupings />} path ="/colour-groups/:color_group" />
         <Route element={<OnePost />} path="car-color/:slug" exact/>
       </Routes>
     </BrowserRouter>

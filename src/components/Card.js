@@ -27,7 +27,7 @@ export default function Card({ post }) {
     };
   }, []);
 
-  console.log(post)
+  console.log(post.hex_text)
 
   return (
     <Link
@@ -43,13 +43,9 @@ export default function Card({ post }) {
         style={{ backgroundImage: `url(../img/card-background.png)` }}
       >
         {post.mainImage && post.mainImage.asset && (
-          <LazyLoad height={200}>
-            <img
-              className="w-full content-left rounded-b"
-              src={post.mainImage.asset.url}
-              alt={post.short_description}
-            />
-          </LazyLoad>
+          <svg height="200">
+			  <rect width="800" height="800" fill={post.hex_text}/>
+			</svg>
         )}
         <div className="px-6 py-4 bg-[url('../img/card-background.jpg')]">
           <div className="font-bold text-3xl mb-2 text-left">

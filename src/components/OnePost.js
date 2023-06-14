@@ -10,6 +10,7 @@ import Footer from "./Footer.js";
 import Navbar from "./Navbar.js";
 
 
+
 function getContrastColor(hexColor) {
   // Convert hex color to RGB
   const red = parseInt(hexColor.substr(1, 2), 16);
@@ -148,11 +149,6 @@ export default function OnePost() {
                 </p> 
             </div>
 
-
-
-
-         
-
             <div className="bg-white p-8 py-16">
   <div className="max-w-[1240px] mx-auto grid md:grid-cols-2">
     <div className="flex justify-center md:justify-start">
@@ -174,7 +170,8 @@ export default function OnePost() {
             <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-4 place-items-center	py-1	">
               
                 {related.map((post) => (
-                <Card post={post} />
+                // <Card post={post} />
+                <Card post={post} hexText={postData.hex_text} slug={post.slug} key={post.slug} />
                 ))}
             </div>
         </div> 

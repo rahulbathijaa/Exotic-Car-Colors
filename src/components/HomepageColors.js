@@ -88,27 +88,27 @@ const HomepageColors = () => {
       color: "#AEFF7E",
     },
     {
-      link:  "/giallo-orion/",
+      link:  "/car-color/giallo-orion/",
       name: "Giallo Orion",
       color: "#FED136",
     },
     {
-      link: "/mclaren-orange/",
+      link: "/car-color/mclaren-orange/",
       name: "McLaren Orange",
       color: "#FFC43D",
     },
     {
-      link: "/pastel-blue/",
+      link: "/car-color/pastel-blue/",
       name: "Pastel Blue",
       color: "#A0D8FB",
     },
     {
-      link: "/azure-blue/",
+      link: "/car-color/azure-blue/",
       name: "Azure Blue",
       color: "#3C566F",
     },
     {
-      link: "/blu-abu-dhabi/",
+      link: "/car-color/blu-abu-dhabi/",
       name: "Blu Abu Dhabi",
       color: "#2885B5",
     },
@@ -123,12 +123,12 @@ const HomepageColors = () => {
       color: "#00024C",
     },
     {
-      link: "/rosso-fuoco/",
+      link: "/car-color/rosso-fuoco/",
       name: "Rosso Fuoco",
       color: "#D13442",
     },
     {
-      link: "/rosso-corsa/",
+      link: "/car-color/rosso-corsa/",
       name: "Rosso Corsa",
       color: "#D40000",
     },
@@ -143,18 +143,18 @@ const HomepageColors = () => {
       color: "#C7D7E7",
     },
     {
-      link: "/grigio-telesto/",
+      link: "/car-color/grigio-telesto/",
       name: "Grigio Telesto",
       color: "#7692A5",
     },
    
     {
-      link: "/nardo-grey/",
+      link: "/car-color/nardo-grey/",
       name: "Nardo Grey",
       color: "#C0C6C8",
     },
     {
-      link: "/chalk/",
+      link: "/car-color/chalk/",
       name: "Chalk",
       color: "#A5A4AC",
     },

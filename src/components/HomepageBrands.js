@@ -4,11 +4,6 @@ import { Link } from "react-router-dom";
 
 
 import AllPosts from "./AllPosts";
-// import Img1 from '../img/ferrari-car.gif'
-// import Img2 from '../img/lamborghini-car.gif'
-// import Img3 from '../img/porsche-car.gif'
-// import Img4 from '../img/mclaren-car.gif'
-// import Img5 from '../img/audi-car.gif'
 
 import Img1 from "../img/ferrari-brands-photo.webp";
 import Img2 from "../img/lamborghini-brands-photo.webp";

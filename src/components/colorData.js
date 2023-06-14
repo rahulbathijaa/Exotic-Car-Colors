@@ -11,7 +11,7 @@ const colorData = {
         {
             color_name: "Rosso Scuderia",
         short_description: "Ferrari's bright red color.",
-         slug: "/rosso-scuderia/",
+         slug: "/car-color/rosso-scuderia/",
           hex_text: "#ff2800",
           rgb_text: "rgb(255,40,0)",
           cmyk_text: "0, 84, 100, 0",
@@ -21,7 +21,7 @@ const colorData = {
         {
           color_name: "Rosso Corsa",
          short_description: "Ferrari's classic red color.",
-         slug: "/rosso-scuderia/",
+         slug: "/car-color/rosso-corsa/",
           hex_text: "#D40000",
           rgb_text: "rgb(212,0,0)",
           cmyk_text: "0, 100, 100, 17",
@@ -31,7 +31,7 @@ const colorData = {
         {
           color_name: "Rosso Mugello",
           short_description: "Ferrari's dark red color.",
-          slug: "/rosso-mugello/",
+          slug: "/car-color/rosso-mugello/",
           hex_text: "#7A212A",
           rgb_text: "rgb(122,33,42)",
           cmyk_text: "0, 73, 66, 52",
@@ -41,7 +41,7 @@ const colorData = {
         {
             color_name: "Rosso Fuoco",
             short_description: "Ferrari's triple layer red color.",
-            slug: "/rosso-fuoco/",
+            slug: "/car-color/rosso-fuoco/",
             hex_text: "#D13442",
             rgb_text: "rgb(209,52,66)",
             cmyk_text: "0, 75, 68, 18",
@@ -51,7 +51,7 @@ const colorData = {
           {
             color_name: "Rosso Dino",
             short_description: "Ferrari's red/orange color.",
-            slug: "/rosso-dino/",
+            slug: "/car-color/rosso-dino/",
             hex_text: "#FC652E",
             rgb_text: "rgb(252,101,46)",
             cmyk_text: "0, 60, 82, 1",
@@ -61,7 +61,7 @@ const colorData = {
           {
             color_name: "Rosso Fiorano",
             short_description: "Ferrari's ruby red color.",
-            slug: "/rosso-fiorano/",
+            slug: "/car-color/rosso-fiorano/",
             hex_text: "#5D0001",
             rgb_text: "rgb(93,0,1)",
             cmyk_text: "0, 100, 99, 64",
@@ -71,7 +71,7 @@ const colorData = {
           {
             color_name: "Rosso 70 Anni",
             short_description: "Ferrari's 70th anniversary celebration color.",
-            slug: "/rosso-70-anni/",
+            slug: "/car-color/rosso-70-anni/",
             hex_text: "#C40C19",
             rgb_text: "rgb(196,12,25)",
             cmyk_text: "0, 94, 87, 23",
@@ -93,7 +93,7 @@ const colorData = {
           {
               color_name: "Blu Scozia",
           short_description: "Ferrari's dark blue color.",
-           slug: "/blu-scozia/",
+           slug: "/car-color/blu-scozia/",
             hex_text: "#505C77",
             rgb_text: "rgb(80,92,119)",
             cmyk_text: "33, 23, 0, 53",
@@ -103,7 +103,7 @@ const colorData = {
           {
             color_name: "Blu Swaters",
            short_description: "Ferrari's royal blue color.",
-           slug: "/blu-swaters/",
+           slug: "/car-color/blu-swaters/",
             hex_text: "#163166",
             rgb_text: "rgb(22,49,102)",
             cmyk_text: "78, 52, 0, 60",
@@ -113,7 +113,7 @@ const colorData = {
           {
             color_name: "Blu Pozzi",
             short_description: "Ferrari's deep blue color.",
-            slug: "/blu-pozzi/",
+            slug: "/car-color/blu-pozzi/",
             hex_text: "#2C3970",
             rgb_text: "rgb(44,57,112)",
             cmyk_text: "61, 49, 0, 56",
@@ -123,7 +123,7 @@ const colorData = {
           {
               color_name: "Blu Abu Dhabi",
               short_description: "Ferrari's light blue color.",
-              slug: "/blu-abu-dhabi/",
+              slug: "/car-color/blu-abu-dhabi/",
               hex_text: "#2885B5",
               rgb_text: "rgb(40,133,181)",
               cmyk_text: "78, 27, 0, 29",
@@ -133,7 +133,7 @@ const colorData = {
             {
               color_name: "Blu Tour De France",
               short_description: "Ferrari's classic blue color.",
-              slug: "/blu-tour-de-france/",
+              slug: "/car-color/blu-tour-de-france/",
               hex_text: "#2243AA",
               rgb_text: "rgb(34,67,170)",
               cmyk_text: "80, 61, 0, 33",
@@ -155,7 +155,7 @@ const colorData = {
           {
               color_name: "Nero Aldebaran",
           short_description: "Lamborghini's shiny black color.",
-           slug: "/nero-aldebaran/",
+           slug: "/car-color/nero-aldebaran/",
             hex_text: "#0D1015",
             rgb_text: "rgb(13,16,21)",
             cmyk_text: "38, 24, 0, 92",
@@ -165,7 +165,7 @@ const colorData = {
           {
             color_name: "Nero Granatus",
            short_description: "Lamborghini's contemporary black color.",
-           slug: "/nero-granatus/",
+           slug: "/car-color/nero-granatus/",
             hex_text: "#92555D",
             rgb_text: "rgb(146,85,93)",
             cmyk_text: "0, 42, 36, 43",
@@ -175,7 +175,7 @@ const colorData = {
           {
             color_name: "Nero Helene",
             short_description: "Lamborghini's Ad Personam black color.",
-            slug: "/nero-helene/",
+            slug: "/car-color/nero-helene/",
             hex_text: "#151618",
             rgb_text: "rgb(21,22,24)",
             cmyk_text: "13, 8, 0, 91",
@@ -185,7 +185,7 @@ const colorData = {
           {
               color_name: "Nero Noctis",
               short_description: "Lamborghini's Ad Personam metallic black color.",
-              slug: "/nero-noctis/",
+              slug: "/car-color/nero-noctis/",
               hex_text: "#292927",
               rgb_text: "rgb(41,41,39)",
               cmyk_text: "0, 0, 5, 84",
@@ -195,7 +195,7 @@ const colorData = {
             {
               color_name: "Nero Pegaso",
               short_description: "Lamborghini's Ad Personam dark black color.",
-              slug: "/nero-pegaso/",
+              slug: "/car-color/nero-pegaso/",
               hex_text: "#080D10",
               rgb_text: "rgb(8,13,16)",
               cmyk_text: "50, 19, 0, 94",
@@ -205,7 +205,7 @@ const colorData = {
             {
                 color_name: "Nero Nemesis",
                 short_description: "Lamborghini's Ad Personam matte black color.",
-                slug: "/nero-nemesis/",
+                slug: "/car-color/nero-nemesis/",
                 hex_text: "#312F30",
                 rgb_text: "rgb(49,47,48)",
                 cmyk_text: "0, 4, 2, 81",
@@ -228,7 +228,7 @@ const colorData = {
           {
               color_name: "Grigio Telesto",
           short_description: "Lamborghini's sportiva grey color.",
-           slug: "/grigio-telesto/",
+           slug: "/car-color/grigio-telesto/",
             hex_text: "#7692A5",
             rgb_text: "rgb(118,146,165)",
             cmyk_text: "28, 12, 0, 35",
@@ -238,7 +238,7 @@ const colorData = {
           {
             color_name: "Grigio Antares",
            short_description: "Lamborghini's Ad Personam metallic grey color.",
-           slug: "/grigio-antares/",
+           slug: "/car-color/grigio-antares/",
             hex_text: "#A6ADB7",
             rgb_text: "rgb(166,173,183)",
             cmyk_text: "9, 5, 0, 28",
@@ -248,7 +248,7 @@ const colorData = {
           {
             color_name: "Grigio Ater",
             short_description: "Lamborghini's Ad Personam dark grey color.",
-            slug: "/grigio-ater/",
+            slug: "/car-color/grigio-ater/",
             hex_text: "#727274",
             rgb_text: "rgb(114,114,116)",
             cmyk_text: "2, 2, 0, 55",
@@ -258,7 +258,7 @@ const colorData = {
           {
               color_name: "Grigio Estoque",
               short_description: "Lamborghini's Ad Personam metallic grey color.",
-              slug: "/grigio-estoque/",
+              slug: "/car-color/grigio-estoque/",
               hex_text: "#ACACAE",
               rgb_text: "rgb(172,172,174)",
               cmyk_text: "1, 1, 0, 32",
@@ -268,7 +268,7 @@ const colorData = {
             {
               color_name: "Grigio Hati",
               short_description: "Lamborghini's Ad Personam light grey color.",
-              slug: "/grigio-hati/",
+              slug: "/car-color/grigio-hati/",
               hex_text: "#C7D7E7",
               rgb_text: "rgb(199,215,231)",
               cmyk_text: "14, 7, 0, 9",
@@ -278,7 +278,7 @@ const colorData = {
             {
                 color_name: "Grigio Keres",
                 short_description: "Lamborghini's Ad Personam metallic grey color.",
-                slug: "/grigio-keres/",
+                slug: "/car-color/grigio-keres/",
                 hex_text: "#6F6F6F",
                 rgb_text: "rgb(111,111,111)",
                 cmyk_text: "0, 0, 0, 56",
@@ -288,7 +288,7 @@ const colorData = {
             {
                 color_name: "Grigio Liqueo",
                 short_description: "Lamborghini's Ad Personam metallic grey color.",
-                slug: "/grigio-liqueo/",
+                slug: "/car-color/grigio-liqueo/",
                 hex_text: "#6F6F6F",
                 rgb_text: "rgb(111,111,111)",
                 cmyk_text: "0, 0, 0, 56",
@@ -298,7 +298,7 @@ const colorData = {
               {
                 color_name: "Grigio Lynx",
                 short_description: "Lamborghini's Ad Personam grey color.",
-                slug: "/grigio-lynx/",
+                slug: "/car-color/grigio-lynx/",
                 hex_text: "#707176",
                 rgb_text: "rgb(112,113,118)",
                 cmyk_text: "5, 4, 0, 54",
@@ -308,7 +308,7 @@ const colorData = {
               {
                 color_name: "Grigio Nimbus",
                 short_description: "Lamborghini's Ad Personam bright light grey color.",
-                slug: "/grigio-nimbus/",
+                slug: "/car-color/grigio-nimbus/",
                 hex_text: "#6B7278",
                 rgb_text: "rgb(107,114,120)",
                 cmyk_text: "11, 5, 0, 53",
@@ -331,7 +331,7 @@ const colorData = {
           {
               color_name: "Blu Cepheus",
           short_description: "Lamborghini's contemporary blue color.",
-           slug: "/blu-cepheus/",
+           slug: "/car-color/blu-cepheus/",
             hex_text: "#2CAEFE",
             rgb_text: "rgb(57,191,254)",
             cmyk_text: "78, 25, 0, 0",
@@ -341,7 +341,7 @@ const colorData = {
           {
             color_name: "Blu Aegir",
            short_description: "Lamborghini's Ad Personam metallic grey color.",
-           slug: "/blu-aegir/",
+           slug: "/car-color/blu-aegir/",
             hex_text: "#A6ADB7",
             rgb_text: "rgb(44,174,254)",
             cmyk_text: "83, 31, 0, 0",
@@ -351,7 +351,7 @@ const colorData = {
           {
             color_name: "Blu Glauco",
             short_description: "Lamborghini's Ad Personam teal color.",
-            slug: "/blu-glauco/",
+            slug: "/car-color/blu-glauco/",
             hex_text: "#08C7E3",
             rgb_text: "rgb(8,199,227)",
             cmyk_text: "96, 12, 0, 11",
@@ -361,7 +361,7 @@ const colorData = {
           {
               color_name: "Blu Eleos",
               short_description: "Lamborghini's Ad Personam shiny blue color.",
-              slug: "/blu-eleos/",
+              slug: "/car-color/blu-eleos/",
               hex_text: "#418DD8",
               rgb_text: "rgb(65,141,216)",
               cmyk_text: "70, 35, 0, 15",
@@ -371,7 +371,7 @@ const colorData = {
             {
               color_name: "Blu Nila",
               short_description: "Lamborghini's shiny blue color.",
-              slug: "/blu-nila/",
+              slug: "/car-color/blu-nila/",
               hex_text: "#017EF4",
               rgb_text: "rgb(1,126,244)",
               cmyk_text: "100, 48, 0, 4",
@@ -381,7 +381,7 @@ const colorData = {
             {
                 color_name: "Blu Uranus",
                 short_description: "Lamborghini's pearl ocean color.",
-                slug: "/blu-uranus/",
+                slug: "/car-color/blu-uranus/",
                 hex_text: "#0177A4",
                 rgb_text: "rgb(1,119,164)",
                 cmyk_text: "99, 27, 0, 36",
@@ -391,7 +391,7 @@ const colorData = {
             {
                 color_name: "Blu Astraeus",
                 short_description: "Lamborghini's Ad Personam deep blue color.",
-                slug: "/blu-astraeus/",
+                slug: "/car-color/blu-astraeus/",
                 hex_text: "#00024C",
                 rgb_text: "rgb(0,2,76)",
                 cmyk_text: "100, 97, 0, 70",
@@ -401,7 +401,7 @@ const colorData = {
               {
                 color_name: "Blu Notte",
                 short_description: "Lamborghini's classic blue color.",
-                slug: "/blu-notte/",
+                slug: "/car-color/blu-notte/",
                 hex_text: "#212E58",
                 rgb_text: "rgb(33,46,88)",
                 cmyk_text: "63, 48, 0, 65",
@@ -411,7 +411,7 @@ const colorData = {
               {
                 color_name: "Blu Fontus",
                 short_description: "Lamborghini's Ad Personam dark blue color.",
-                slug: "/blu-fontus/",
+                slug: "/car-color/blu-fontus/",
                 hex_text: "#313247",
                 rgb_text: "rgb(49,50,71)",
                 cmyk_text: "31, 30, 0, 72",
@@ -421,7 +421,7 @@ const colorData = {
               {
                 color_name: "Blu Nethuns",
                 short_description: "Lamborghini's sportiva blue color.",
-                slug: "/blu-nethuns/",
+                slug: "/car-color/blu-nethuns/",
                 hex_text: "#1336EA",
                 rgb_text: "rgb(19,54,234)",
                 cmyk_text: "92, 77, 0, 8",
@@ -431,7 +431,7 @@ const colorData = {
               {
                 color_name: "Blu Nereid",
                 short_description: "Lamborghini's Ad Personam metallic blue color.",
-                slug: "/blu-nereid/",
+                slug: "/car-color/blu-nereid/",
                 hex_text: "#2539BC",
                 rgb_text: "rgb(37,57,188)",
                 cmyk_text: "80, 70, 0, 26",
@@ -441,7 +441,7 @@ const colorData = {
               {
                 color_name: "Blu Le Mans",
                 short_description: "Lamborghini's Ad Personam bright blue color.",
-                slug: "/blu-le-mans/",
+                slug: "/car-color/blu-le-mans/",
                 hex_text: "#0690FF",
                 rgb_text: "rgb(6,144,255)",
                 cmyk_text: "98, 44, 0, 0",
@@ -451,7 +451,7 @@ const colorData = {
               {
                 color_name: "Blu Caelum",
                 short_description: "Lamborghini's Ad Personam royal blue color.",
-                slug: "/blu-caelum/",
+                slug: "/car-color/blu-caelum/",
                 hex_text: "#054AE3",
                 rgb_text: "rgb(5,74,227)",
                 cmyk_text: "98, 67, 0, 11",
@@ -473,7 +473,7 @@ const colorData = {
           {
               color_name: "Verde Mantis",
           short_description: "Lamborghini's shiny green color.",
-           slug: "/verde-mantis/",
+           slug: "/car-color/verde-mantis/",
             hex_text: "#7DC23B",
             rgb_text: "rgb(125,194,59)",
             cmyk_text: "36, 0, 70, 24",
@@ -483,7 +483,7 @@ const colorData = {
           {
             color_name: "Verde Selvans",
            short_description: "Lamborghini's sportiva green color.",
-           slug: "/verde-selvans/",
+           slug: "/car-color/verde-selvans/",
             hex_text: "#67C52F",
             rgb_text: "rgb(103,197,47)",
             cmyk_text: "48, 0, 76, 23",
@@ -493,7 +493,7 @@ const colorData = {
           {
             color_name: "Verde Gea Lucido",
             short_description: "Lamborghini's contemporary green color.",
-            slug: "/verde-gea-lucido/",
+            slug: "/car-color/verde-gea-lucido/",
             hex_text: "#8B8970",
             rgb_text: "rgb(139,137,112)",
             cmyk_text: "0, 1, 19, 45",
@@ -503,7 +503,7 @@ const colorData = {
           {
               color_name: "Verde Citrea",
               short_description: "Lamborghini's pearl green color.",
-              slug: "/verde-citrea/",
+              slug: "/car-color/verde-citrea/",
               hex_text: "#9AF95D",
               rgb_text: "rgb(154,249,93)",
               cmyk_text: "38, 0, 63, 2",
@@ -513,7 +513,7 @@ const colorData = {
             {
               color_name: "Verde Metallic",
               short_description: "Lamborghini's classic british racing green color.",
-              slug: "/verde-metallic/",
+              slug: "/car-color/verde-metallic/",
               hex_text: "#8FC028",
               rgb_text: "rgb(143,192,40)",
               cmyk_text: "26, 0, 79, 25",
@@ -523,7 +523,7 @@ const colorData = {
             {
                 color_name: "Verde Scandal",
                 short_description: "Lamborghini's classic green color.",
-                slug: "/verde-scandal/",
+                slug: "/car-color/verde-scandal/",
                 hex_text: "#84E12E",
                 rgb_text: "rgb(132,225,46)",
                 cmyk_text: "41, 0, 80, 12",
@@ -533,7 +533,7 @@ const colorData = {
             {
                 color_name: "Verde Ermes",
                 short_description: "Lamborghini's Ad Personam dark green color.",
-                slug: "/verde-ermes/",
+                slug: "/car-color/verde-ermes/",
                 hex_text: "#546E51",
                 rgb_text: "rgb(84,110,81)",
                 cmyk_text: "24, 0, 26, 57",
@@ -543,7 +543,7 @@ const colorData = {
               {
                 color_name: "Verde Ithaca",
                 short_description: "Lamborghini's Ad Personam bright green color.",
-                slug: "/verde-ithaca/",
+                slug: "/car-color/verde-ithaca/",
                 hex_text: "#AEFF7E",
                 rgb_text: "rgb(174,255,126)",
                 cmyk_text: "32, 0, 51, 0",

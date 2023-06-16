@@ -131,10 +131,10 @@ export default function OnePost() {
             {/* <div className="p-8 bg-red-400 "> */}
             <div className="p-8 pb-16" style={{ backgroundColor: postData.hex_text }}>
 
-                <h1 className="onepost__header-text font-bold font-heading md:ml-15" style={{ color: getContrastColor(postData.hex_text) }}>
+                <h1 className="onepost__header-text font-bold font-heading md:ml-20" style={{ color: getContrastColor(postData.hex_text) }}>
                 {postData.color_name}
                 </h1>
-                <h2 className="mb-11 text-2xl text-gray-900 font-medium md:max-w-md md:ml-15" style={{ color: getContrastColor(postData.hex_text) }} >
+                <h2 className="mb-11 text-2xl text-gray-900 font-medium md:max-w-md md:ml-20" style={{ color: getContrastColor(postData.hex_text) }} >
                 {postData.short_description}
                 </h2>
                 

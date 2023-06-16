@@ -8,10 +8,16 @@ import AllPosts from "./components/AllPosts";
 import OnePost from "./components/OnePost.js";
 import Homepage from "./components/Homepage.js";
 import ColorGroupings from "./components/ColorGroupings.js";
+// import { Helmet } from "react-helmet";
+
 
 function App() {
   return (
     <BrowserRouter>
+    {/* <Helmet> 
+      <title> Exotic Car Colors </title>
+
+    </Helmet> */}
       <Routes>
         <Route element={<Homepage />} path="/" exact />
         <Route element={<AllPosts />} path="/car-companies/:brand_type" exact />

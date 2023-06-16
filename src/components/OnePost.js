@@ -8,6 +8,8 @@ import HomepageColors from "./HomepageColors.js";
 import Card from "./Card.js";
 import Footer from "./Footer.js";
 import Navbar from "./Navbar.js";
+import { Helmet } from "react-helmet";
+
 
 
 
@@ -116,6 +118,10 @@ export default function OnePost() {
 
   return (
     <div className="text-green">
+      <Helmet>
+        <title>{postData.color_name} | {postData.short_description}</title>
+        <meta name="description" content={postData.long_description} />
+      </Helmet>
       <Navbar hex_text={postData.hex_text} textColor={textColor}/>
       {/* max-w-[1240px] mt-[-2px] w-full mx-auto text-left flex flex-col justify-left py-16 px-4 */}
       <div className="">

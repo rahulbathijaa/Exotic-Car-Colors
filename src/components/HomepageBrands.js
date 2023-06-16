@@ -41,7 +41,7 @@ const HomepageBrands = () => {
       id: 5,
       title: "Audi",
       imgSrc: Img5,
-      link: "/car-companies/Audi",
+      link: "/car-companies/audi",
     },
   ];
 

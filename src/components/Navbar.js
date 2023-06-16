@@ -24,7 +24,7 @@ function Navbar(props) {
           <ul className={click ? "nav-menu active" : "nav-menu"}>
             <li className="nav-item">
               <Link
-                to="/car-companies/Ferrari"
+                to="/car-companies/ferrari"
                 className="nav-links" 
                 onClick={closeMobileMenu}
                 style={{ color: textColor }}
@@ -34,7 +34,7 @@ function Navbar(props) {
             </li>
             <li className="nav-item">
               <Link
-                to="/car-companies/Lamborghini"
+                to="/car-companies/lamborghini"
                 className="nav-links" 
                 onClick={closeMobileMenu}
                 style={{ color: textColor }}
@@ -44,7 +44,7 @@ function Navbar(props) {
             </li>
             <li className="nav-item">
               <Link
-                to="/car-companies/Porsche"
+                to="/car-companies/porsche"
                 className="nav-links"
                 onClick={closeMobileMenu}
                 style={{ color: textColor }}
@@ -54,7 +54,7 @@ function Navbar(props) {
             </li>
             <li className="nav-item">
               <Link
-                to="/car-companies/McLaren"
+                to="/car-companies/mclaren"
                 className="nav-links"
                 onClick={closeMobileMenu}
                 style={{ color: textColor }}
@@ -64,7 +64,7 @@ function Navbar(props) {
             </li>
             <li className="nav-item">
               <Link
-                to="/car-companies/Audi"
+                to="/car-companies/audi"
                 className="nav-links"
                 onClick={closeMobileMenu}
                 style={{ color: textColor }}

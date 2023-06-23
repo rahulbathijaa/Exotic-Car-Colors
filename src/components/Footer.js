@@ -53,19 +53,19 @@ function Footer(props) {
     <div className="footer-links">
       <div className="footer-link-wrapper">
         <div className="footer-link-items">
-          <a href="/colors/Ferrari">Ferrari</a>
+          <a href="/car-companies/ferrari">Ferrari</a>
         </div>
         <div className="footer-link-items">
-          <a href="/colors/Lamborghini">Lamborghini</a>
+          <a href="/car-companies/lamborghini">Lamborghini</a>
         </div>
         <div className="footer-link-items">
-          <a href="/colors/Porsche">Porsche</a>
+          <a href="/car-companies/porsche">Porsche</a>
         </div>
         <div className="footer-link-items">
-          <a href="/colors/McLaren">McLaren</a>
+          <a href="/car-companies/mclaren">McLaren</a>
         </div>
         <div className="footer-link-items">
-          <a href="/colors/Audi">Audi</a>
+          <a href="/car-companies/audi">Audi</a>
         </div>
         <div className="footer-link-items">
           <a href="https://twitter.com/rahulbathijaa">Contact</a>

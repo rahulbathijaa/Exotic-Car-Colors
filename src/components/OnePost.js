@@ -11,8 +11,6 @@ import Navbar from "./Navbar.js";
 import { Helmet } from "react-helmet";
 
 
-
-
 function getContrastColor(hexColor) {
   // Convert hex color to RGB
   const red = parseInt(hexColor.substr(1, 2), 16);
@@ -56,6 +54,7 @@ export default function OnePost() {
            cmyk_text,
            ral_text,
            long_description,
+           affiliate_link,
            related_color_1,
            related_color_2,
            related_color_3,
@@ -92,29 +91,17 @@ export default function OnePost() {
          }
        }
        }`);
-  
-
 
       console.log("bruh", relatedPosts);
       setRelated(relatedPosts);
-
-      
-
       // For bigbodyrb: 2 and 3
     }
 
     fetchData();
-   
   }, [slug]);
-
-  
-  
 
   if (!postData) return <div>Loading...</div>;
   const textColor = getContrastColor(postData.hex_text);
-
-
-  
 
   return (
     <div className="text-green">
@@ -167,6 +154,15 @@ export default function OnePost() {
     <div className=" pl-5 pr-4">
     <h4 className="text-3xl font-bold mb-4">{postData.color_name}</h4>
     <p className="max-w-md break-word">{postData.long_description}</p>
+
+    {postData.affiliate_link && (
+    <a href={postData.affiliate_link} target="_blank" rel="noopener noreferrer" 
+      className="inline-block mt-8 px-6 py-3 text-md font-bold text-center text-white transition bg-blue-500 rounded-lg hover:bg-blue-600 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
+      style={{ backgroundColor: postData.hex_text, color: getContrastColor(postData.hex_text) }}>
+      Buy touch up paint
+    </a>
+  )}
+
     </div>
   </div>
 </div>

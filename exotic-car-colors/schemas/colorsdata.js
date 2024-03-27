@@ -77,6 +77,17 @@ export default {
         
 
         {
+            name: "affiliate_link",
+            title: "Affiliate Link",
+            type: "url",
+            description: "Enter the affiliate link URL here",
+            validation: Rule => Rule.uri({
+                allowRelative: false, // Only allow absolute URLs
+                scheme: ['http', 'https'], // Only allow http and https URLs
+            })
+        },
+
+        {
             name: "hex_text",
             title: "HEX Text",
             type: "string",

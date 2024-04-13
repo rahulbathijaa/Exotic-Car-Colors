@@ -70,6 +70,7 @@ export default function OnePost() {
       console.log("Data:", data);
       setPostData(data[0]);
       // queries B1. b2. b3
+      // adding another comment
 
       const relatedPosts =
         await sanityClient.fetch(
@@ -171,7 +172,7 @@ export default function OnePost() {
             <h2 className="text-5xl flex justify-left py-6 pb-10 md:ml-20">Related Colors</h2>
             <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-4 place-items-center	py-1	">
               
-                {related.map((post) => (
+                {related.map((post) => ( 
                 // <Card post={post} />
                 <Card post={post} hexText={postData.hex_text} slug={post.slug} key={post.slug} />
                 ))}

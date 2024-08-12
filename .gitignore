@@ -15,9 +15,13 @@ node_modules
 .DS_Store
 .env.local
 .env.development.local
+/exotic/src/.env.development
+src/.env.development
+.env.development
 .env.test.local
 .env.production.local
 
 npm-debug.log*
 yarn-debug.log*
-yarn-error.log*
+yarn-error.log*src/.env.development
+src/.env.development

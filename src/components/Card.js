@@ -19,7 +19,6 @@ export default function Card({ post, hexText, isAllPostsPage }) {
     });
     observer.observe(cardRef.current);
 
-    // Cleanup function for when the component unmounts
     return () => {
       observer.disconnect();
     };

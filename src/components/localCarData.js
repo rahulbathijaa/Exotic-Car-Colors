@@ -2,13 +2,6 @@ import Papa from "papaparse";
 import fs from "fs";
 import sanityClient from "@sanity/client";
 
-// var file = fs.readFileSync('src/csv/Exotic Car Colors Database - Compiled.csv', 'utf8');
-// var csv_parsed = Papa.parse(file, {header: true});
-// var csv_rows = csv_parsed['data'];
-
-// for (const row in csv_rows){
-//     console.log(row)
-// const sanityClient = require('@sanity/client')
 
 const CAR_API_URL = "https://guide-cat-api.sanity-io.now.sh/cats";
 
@@ -16,8 +9,7 @@ const client = sanityClient({
   projectId: "zlmf9sgs",
   dataset: "production",
   apiVersion: "2021-08-31",
-  token:
-    "REDACTED_TOKEN", // we need this to get write access
+  token: process.env.development.SANITY_TOKEN,
   useCdn: false, // We can't use the CDN for writing
 });
 

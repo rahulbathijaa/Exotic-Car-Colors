@@ -20,33 +20,6 @@ export default {
               maxLength: 96
             }
           },
-        // {
-        //     // name: "slug_name",
-        //     // title: "Slug",
-        //     // type: "slug",
-        //     // fields: {
-        //         // If you want to customize how slugs are formatted
-        //         name: 'slug_custom_format',
-        //         type: 'slug',
-        //         title: 'Slug',
-        //         inputComponent: SlugInput,
-        //         options: {
-        //           urlPrefix: 'https://exoticcarcolors.com/car-colors/',
-        //           slugify: (slugString) => slugString.toLowerCase(),
-        //           // You can also avoid slugifying entirely by returning the full value:
-        //           slugify: (slugString) => slugString,
-        //         },
-        //       },
-            // options: {
-            //     source: 'title',
-            //     maxLength: 200, // will be ignored if slugify is set
-            //     slugify: input => input
-            //                          .toLowerCase()
-            //                          .replace(/\s+/g, '-')
-            //                          .slice(0, 200)
-            //   }
-        // },
-        
         
         {
             name: "color_name",

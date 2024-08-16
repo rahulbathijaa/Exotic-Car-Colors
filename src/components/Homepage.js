@@ -10,10 +10,6 @@ import HomepageBrands from "./HomepageBrands";
 import HomepageColors from "./HomepageColors";
 import Footer from "./Footer";
 
-// name
-// description
-// etc. ec
-
 export default function Card({ post }) {
   return (
     <div>
